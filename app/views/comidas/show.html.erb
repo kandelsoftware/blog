@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<aside id="form">
+ <%= render :partial=>'himalayas/form' %>
+
+</aside>
+
+<p>
+  <b>Menu:</b>
+  <%= @comida.menu_id %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @comida.name %>
+</p>
+
+<p>
+  <b>Price:</b>
+  <%= @comida.price %>
+</p>
+
+<p>
+  <b>Img:</b>
+  <%= @comida.img %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @comida.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_menu_comida_path(@menu,@comida) %> |
+<%= link_to 'Back', menu_comidas_path(@menu) %>

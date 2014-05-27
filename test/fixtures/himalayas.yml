@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  comensales: MyString
+  hora: MyString
+  menu: MyString
+  fecha: 2014-05-09
+  nombre: MyString
+  email: MyString
+  telefono: MyString
+
+two:
+  comensales: MyString
+  hora: MyString
+  menu: MyString
+  fecha: 2014-05-09
+  nombre: MyString
+  email: MyString
+  telefono: MyString

@@ -1,0 +1,41 @@
+<h1>Listing himalayas</h1>
+
+<table>
+  <tr>
+    <th>Comensales</th>
+    <th>Hora</th>
+    <th>Menu</th>
+    <th>Fecha</th>
+    <th>Nombre</th>
+    <th>Email</th>
+    <th>Telefono</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @himalayas.each do |himalaya| %>
+  <tr>
+    <td><%= himalaya.persona %></td>
+    <td><%= himalaya.hora %></td>
+    <td><%= himalaya.menu %></td>
+    <td><%= himalaya.fecha %></td>
+    <td><%= himalaya.nombre %></td>
+    <td><%= himalaya.email %></td>
+    <td><%= himalaya.telefono %></td>
+    <td><%= link_to 'Show', himalaya %></td>
+              <% if permitted_to? :edit,himalaya %>
+    <td><%= link_to 'Edit', edit_himalaya_path(himalaya) %></td>
+             <% end %>
+              <% if permitted_to? :destroy,himalaya %>
+
+    <td><%= link_to 'Destroy', himalaya, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+                 <% end %>
+
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Himalaya', new_himalaya_path %>

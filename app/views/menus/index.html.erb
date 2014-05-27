@@ -1,0 +1,22 @@
+<aside class="form">
+ <%= render :partial=>'himalayas/form' %>
+
+</aside>
+<% @menus.each do |menu| %>
+<div class= "menus">
+
+    <td><%= link_to menu.name, menu_comidas_path(menu) %></td>
+ <p> <%=link_to (image_tag"#{(menu.image) }.jpg",size: '130x130'),menu_comidas_path(menu)%>
+
+                  <% if permitted_to? :edit,menu %>
+    <td><%= link_to 'Edit', edit_menu_path(menu) %></td>
+    <% end %>
+                  <% if permitted_to? :destroy,menu %>
+
+    <td><%= link_to 'Destroy', menu, method: :delete, data: { confirm: 'Are you sure?' } %></td>    <% end %>
+</div>
+
+<% end %>
+
+
+
