@@ -44,7 +44,7 @@ gem 'rambling-slider-rails'
 
 # Use unicorn as the app server
  gem 'unicorn'
-
+gem "i18n", "0.6.4"
 # Deploy with Capistrano
 gem 'capistrano', '~> 2.15.5'
 # To use debugger
