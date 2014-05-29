@@ -34,7 +34,7 @@ class DeviseCreateUsers < ActiveRecord::Migration
 
       t.timestamps
     end
-   User.create(username:'',password:'',email: '')
+   User.create(username:'himalaya',password:'523372',email: 'reservahimalaya@gmail.com')
 
     add_index :users, :email,                unique: true
     add_index :users, :reset_password_token, unique: true
