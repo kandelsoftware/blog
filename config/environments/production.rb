@@ -6,7 +6,7 @@ Restaurant::Application.configure do
   config.cache_classes = true
 
   # Full error reports are disabled and caching is turned on
-  config.consider_all_requests_local       = true
+  config.consider_all_requests_local       = false
   config.action_controller.perform_caching = true
 
   # Disable Rails's static asset server (Apache or nginx will already do this)
@@ -51,16 +51,18 @@ Restaurant::Application.configure do
 
   # Disable delivery errors, bad email addresses will be ignored
   # config.action_mailer.raise_delivery_errors = false
-#config.action_mailer.default_url_options = { :host => 'http://188.226.212.220' }
+config.action_mailer.default_url_options = { :host => 'http://188.226.212.220' }
   # Show full error reports and disable caching
   config.action_mailer.delivery_method=:smtp
   config.action_mailer.smtp_settings = {
     :address => "smtp.gmail.com",
     :port => 465,
+    :domain => 'http://188.226.212.220',
     :user_name => "reservahimalaya@gmail.com",
     :password => "ramkandel33",
     :authentication => 'plain',
     :enable_starttls_auto => true
+
   }
   # Don't care if the mailer can't send
   config.action_mailer.raise_delivery_errors = true
