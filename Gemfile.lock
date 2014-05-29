@@ -70,6 +70,7 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.25.1)
     multi_json (1.10.1)
+    mysql2 (0.3.16)
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
     net-sftp (2.1.2)
@@ -78,7 +79,6 @@ GEM
     net-ssh-gateway (1.2.0)
       net-ssh (>= 2.6.5)
     orm_adapter (0.5.0)
-    pg (0.17.1)
     polyglot (0.3.4)
     rack (1.4.5)
     rack-cache (1.2)
@@ -147,7 +147,7 @@ DEPENDENCIES
   devise
   jquery-rails
   jquery-ui-rails
-  pg
+  mysql2
   rails (= 3.2.18)
   rambling-slider-rails
   sass-rails (~> 3.2.3)
