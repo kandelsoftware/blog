@@ -7,5 +7,5 @@ production:
   pool: 5
   host: localhost
   username: root
-  password:
+  password: nandakali
   socket: /var/run/mysqld/mysqld.sock

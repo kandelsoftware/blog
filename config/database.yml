@@ -31,7 +31,7 @@ development:
   reconnect: false
   database: blog_development
   pool: 5
-  host:localhost
+  host: localhost
   username: root
   password:
   socket: /tmp/mysql.sock
@@ -42,7 +42,7 @@ production:
   reconnect: false
   database: blog_production
   pool: 5
-  host:localhost
+  host: localhost
   username: root
   password:
   socket: /tmp/mysql.sock
