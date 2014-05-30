@@ -51,7 +51,7 @@ Restaurant::Application.configure do
 
   # Disable delivery errors, bad email addresses will be ignored
   # config.action_mailer.raise_delivery_errors = false
-config.action_mailer.default_url_options = { :host => 'http://188.226.212.220' }
+#config.action_mailer.default_url_options = { :host => 'http://188.226.212.220' }
   # Show full error reports and disable caching
   config.action_mailer.delivery_method=:smtp
   config.action_mailer.smtp_settings = {
@@ -61,7 +61,7 @@ config.action_mailer.default_url_options = { :host => 'http://188.226.212.220' }
     :user_name => "reservahimalaya@gmail.com",
     :password => "ramkandel33",
     :authentication => 'plain',
-    :enable_starttls_auto => true
+    :enable_starttls_auto => false
 
   }
   # Don't care if the mailer can't send
