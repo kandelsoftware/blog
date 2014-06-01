@@ -51,13 +51,13 @@ Restaurant::Application.configure do
 
   # Disable delivery errors, bad email addresses will be ignored
   # config.action_mailer.raise_delivery_errors = false
-config.action_mailer.default_url_options = { :host => '188.226.212.220' }
+config.action_mailer.default_url_options = { :host => 'himalayarestaurant.es' }
   # Show full error reports and disable caching
   config.action_mailer.delivery_method=:smtp
   config.action_mailer.smtp_settings = {
     :address => "smtp.gmail.com",
     :port => 587,
-    :domain => '188.226.212.220',
+    :domain => 'himalayarestaurant.es',
     :user_name => "reservahimalaya@gmail.com",
     :password => "ramkandel33",
     :authentication => 'plain',
