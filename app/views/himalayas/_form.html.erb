@@ -29,22 +29,30 @@
 
  <div id="himalaya_datepicker">
   </div>
+<div class="error">
   <div class="field">
-    <%= f.label :nombre %><br />
-    <%= f.text_field :nombre %>
+    <table>
+    <tr>
+       <th><%= f.label :nombre %></th>
+       <th> <%= f.label :apellidos %></th>
+    </tr>
+      <tr>
+    <th> <%= f.text_field :nombre %></th>
+    <th><%= f.text_field :apellidos %></th>
+    </tr>
+    </table>
   </div>
-  <div class="field">
-    <%= f.label :apellidos %><br />
-    <%= f.text_field :apellidos %>
-  </div>
-  <div class="field">
-    <%= f.label :email %><br />
+   <div class="field">
+    <th>
+   <p> <%= f.label :email %><br />
     <%= f.text_field :email %>
+    </th>
   </div>
   <div class="field">
     <%= f.label :telefono %></br>
     <%= f.text_field :telefono %><p>
   </div>
+</div>
   <div class="actions">
     <%= f.submit("Reserva ") %><p>
 </div>
