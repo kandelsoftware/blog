@@ -1,8 +1,6 @@
 /* @override http://localhost:3000/assets/himalayas.css?body=1 */
 
-/* @override http://localhost:3000/assets/himalayas.css?body=1 */
 /* line 2, ../../app/assets/stylesheets/himalayas.css.scss */
-/* line 5, ../../app/assets/stylesheets/himalayas.css.scss */
 html {
   font-size: 100%;
   overflow-y: scroll;
@@ -12,7 +10,6 @@ html {
 }
 
 /* line 9, ../../app/assets/stylesheets/himalayas.css.scss */
-/* line 14, ../../app/assets/stylesheets/himalayas.css.scss */
 body {
   width: 100%;
   margin: 0 auto;
@@ -21,20 +18,17 @@ body {
 
 /*  Navigation  Contain*/
 /* line 17, ../../app/assets/stylesheets/himalayas.css.scss */
-/* line 22, ../../app/assets/stylesheets/himalayas.css.scss */
 #mainnav {
   background: #916A31;
   height: 2.9em;
 }
 
 /* line 22, ../../app/assets/stylesheets/himalayas.css.scss */
-/* line 28, ../../app/assets/stylesheets/himalayas.css.scss */
 #user_nav {
   float: right;
 }
 
 /* line 27, ../../app/assets/stylesheets/himalayas.css.scss */
-/* line 33, ../../app/assets/stylesheets/himalayas.css.scss */
 ul, li {
   margin: 0;
   padding: 0;
@@ -43,7 +37,6 @@ ul, li {
 }
 
 /* line 35, ../../app/assets/stylesheets/himalayas.css.scss */
-/* line 41, ../../app/assets/stylesheets/himalayas.css.scss */
 ul {
   background: #D5973C;
   height: 2.5em;
@@ -51,7 +44,6 @@ ul {
 }
 
 /* line 42, ../../app/assets/stylesheets/himalayas.css.scss */
-/* line 48, ../../app/assets/stylesheets/himalayas.css.scss */
 li a {
   display: block;
   line-height: 2em;
@@ -63,7 +55,6 @@ li a {
 }
 
 /* line 52, ../../app/assets/stylesheets/himalayas.css.scss */
-/* line 59, ../../app/assets/stylesheets/himalayas.css.scss */
 li a:hover {
   background: url("nav_rollover.png") no-repeat center center;
   height: 2em;
@@ -74,7 +65,6 @@ li a:hover {
 }
 
 /* line 61, ../../app/assets/stylesheets/himalayas.css.scss */
-/* line 69, ../../app/assets/stylesheets/himalayas.css.scss */
 .current, a:hover.current {
   background: #AD9B7F;
   color: #eee;
@@ -87,21 +77,18 @@ li a:hover {
 
 /***Main contain *****/
 /* line 72, ../../app/assets/stylesheets/himalayas.css.scss */
-/* line 81, ../../app/assets/stylesheets/himalayas.css.scss */
 #main {
   top: 0px;
   position: relative;
 }
 
 /* line 77, ../../app/assets/stylesheets/himalayas.css.scss */
-/* line 87, ../../app/assets/stylesheets/himalayas.css.scss */
 aside.form {
   margin: 10;
   float: right;
 }
 
 /* line 81, ../../app/assets/stylesheets/himalayas.css.scss */
-/* line 93, ../../app/assets/stylesheets/himalayas.css.scss */
 aside {
   margin-left: 10px;
   margin-right: 10px;
@@ -109,13 +96,11 @@ aside {
 }
 
 /* line 86, ../../app/assets/stylesheets/himalayas.css.scss */
-/* line 100, ../../app/assets/stylesheets/himalayas.css.scss */
 aside#form {
   float: left;
 }
 
 /* line 89, ../../app/assets/stylesheets/himalayas.css.scss */
-/* line 105, ../../app/assets/stylesheets/himalayas.css.scss */
 aside.slideshow {
   top: 50px;
   left: 300px;
@@ -123,16 +108,14 @@ aside.slideshow {
 }
 
 /* line 94, ../../app/assets/stylesheets/himalayas.css.scss */
-/* line 112, ../../app/assets/stylesheets/himalayas.css.scss */
 aside.facebook {
-  position: relative;
-float: right;  top: 40px;
-  margin: 10px;
 
+  top: 40px;
+  float:right;
+  margin: 10px;
 }
 
 /* line 99, ../../app/assets/stylesheets/himalayas.css.scss */
-/* line 119, ../../app/assets/stylesheets/himalayas.css.scss */
 h6 {
   margin: 0px;
   color: #ed5b1e;
@@ -143,7 +126,6 @@ h6 {
 
 /* Form contain */
 /* line 107, ../../app/assets/stylesheets/himalayas.css.scss */
-/* line 129, ../../app/assets/stylesheets/himalayas.css.scss */
 textchange {
   width: 100px;
   -webkit-appearance: none;
@@ -161,7 +143,6 @@ textchange {
 }
 
 /* line 123, ../../app/assets/stylesheets/himalayas.css.scss */
-/* line 146, ../../app/assets/stylesheets/himalayas.css.scss */
 .selectchange select:hover {
   width: 100px;
   -webkit-appearance: none;
@@ -170,7 +151,6 @@ textchange {
 }
 
 /* line 130, ../../app/assets/stylesheets/himalayas.css.scss */
-/* line 154, ../../app/assets/stylesheets/himalayas.css.scss */
 select {
   font-size: 15px;
   background-color: white;
@@ -182,35 +162,31 @@ select {
 }
 
 /* line 140, ../../app/assets/stylesheets/himalayas.css.scss */
-/* line 165, ../../app/assets/stylesheets/himalayas.css.scss */
 select#himalaya_persona {
   background: url("persona.jpg") no-repeat left;
 }
 
 /* line 144, ../../app/assets/stylesheets/himalayas.css.scss */
-/* line 170, ../../app/assets/stylesheets/himalayas.css.scss */
 select#himalaya_hora {
   text-transform: capitalize;
   background: url("hora.jpg") no-repeat left;
 }
 
 /* line 149, ../../app/assets/stylesheets/himalayas.css.scss */
-/* line 176, ../../app/assets/stylesheets/himalayas.css.scss */
 select#himalaya_menu {
   text-transform: capitalize;
   background: url("menu.jpg") no-repeat left;
 }
 
 /* line 154, ../../app/assets/stylesheets/himalayas.css.scss */
-/* line 182, ../../app/assets/stylesheets/himalayas.css.scss */
 input {
+
   width: 24.8em;
   margin-left: 5;
   position: relative;
 }
 
 /* line 159, ../../app/assets/stylesheets/himalayas.css.scss */
-/* line 190, ../../app/assets/stylesheets/himalayas.css.scss */
 input#himalaya {
   text-transform: capitalize;
   font-size: 15px;
@@ -219,7 +195,6 @@ input#himalaya {
 }
 
 /* line 166, ../../app/assets/stylesheets/himalayas.css.scss */
-/* line 198, ../../app/assets/stylesheets/himalayas.css.scss */
 .fecha input#himalaya {
   margin-top: 10px;
   background: url("fecha.jpg") no-repeat left;
@@ -227,13 +202,11 @@ input#himalaya {
 }
 
 /* line 173, ../../app/assets/stylesheets/himalayas.css.scss */
-/* line 205, ../../app/assets/stylesheets/himalayas.css.scss */
 #himalaya_datepicker {
   font-size: 0.88em;
 }
 
 /* line 176, ../../app/assets/stylesheets/himalayas.css.scss */
-/* line 210, ../../app/assets/stylesheets/himalayas.css.scss */
 .actions input {
   font-size: 20px;
   background-color: white;
@@ -244,7 +217,6 @@ input#himalaya {
 }
 
 /* line 184, ../../app/assets/stylesheets/himalayas.css.scss */
-/* line 220, ../../app/assets/stylesheets/himalayas.css.scss */
 input#himalaya_nombre {
   text-transform: capitalize;
   font-size: 15px;
@@ -253,7 +225,6 @@ input#himalaya_nombre {
 }
 
 /* line 191, ../../app/assets/stylesheets/himalayas.css.scss */
-/* line 228, ../../app/assets/stylesheets/himalayas.css.scss */
 input#himalaya_email {
   font-size: 15px;
   width: 17.875em;
@@ -261,7 +232,6 @@ input#himalaya_email {
 }
 
 /* line 197, ../../app/assets/stylesheets/himalayas.css.scss */
-/* line 235, ../../app/assets/stylesheets/himalayas.css.scss */
 input#himalaya_apellidos {
   text-transform: capitalize;
   font-size: 15px;
@@ -270,7 +240,6 @@ input#himalaya_apellidos {
 }
 
 /* line 204, ../../app/assets/stylesheets/himalayas.css.scss */
-/* line 243, ../../app/assets/stylesheets/himalayas.css.scss */
 input#himalaya_telefono {
   text-transform: capitalize;
   font-size: 15px;
@@ -279,17 +248,16 @@ input#himalaya_telefono {
 }
 
 /* line 211, ../../app/assets/stylesheets/himalayas.css.scss */
-/* line 251, ../../app/assets/stylesheets/himalayas.css.scss */
 input.btn.btn-primary {
   background-color: #0c6ad4;
   margin-left: 30px;
 }
 
 /* line 216, ../../app/assets/stylesheets/himalayas.css.scss */
-/* line 257, ../../app/assets/stylesheets/himalayas.css.scss */
 label {
+
   color: black;
-  font-size: 15px;
+  font-size:15px;
   position: relative;
   left: 5px;
   font-weight: normal;
@@ -297,7 +265,6 @@ label {
 }
 
 /* line 223, ../../app/assets/stylesheets/himalayas.css.scss */
-/* line 268, ../../app/assets/stylesheets/himalayas.css.scss */
 div#emailnotice {
   top: 10px;
   background-color: #2BAA9C;
@@ -310,7 +277,6 @@ div#emailnotice {
 }
 
 /* line 234, ../../app/assets/stylesheets/himalayas.css.scss */
-/* line 280, ../../app/assets/stylesheets/himalayas.css.scss */
 .contact {
   float: right;
   margin: 40px 20px;
@@ -321,14 +287,12 @@ div#emailnotice {
 }
 
 /* line 245, ../../app/assets/stylesheets/himalayas.css.scss */
-/* line 290, ../../app/assets/stylesheets/himalayas.css.scss */
 div#slider.ramblingSlider {
   position: absolute;
   margin: auto;
 }
 
 /* line 250, ../../app/assets/stylesheets/himalayas.css.scss */
-/* line 296, ../../app/assets/stylesheets/himalayas.css.scss */
 .field_with_errors {
   color: #D00;
   margin-left: 20px;
@@ -338,7 +302,6 @@ div#slider.ramblingSlider {
 }
 
 /* line 257, ../../app/assets/stylesheets/himalayas.css.scss */
-/* line 305, ../../app/assets/stylesheets/himalayas.css.scss */
 label.message {
   margin-left: 5px;
   padding-left: 5px;
@@ -346,26 +309,24 @@ label.message {
   color: #ff5c20;
 }
 
-/* line 312, ../../app/assets/stylesheets/himalayas.css.scss */
-div.error th div.field_with_errors label.message {
+div.error th div.field_with_errors label.message
+{
   font-size: 16px;
-  margin: 0px;
+  margin:0px;
   font-weight: normal;
   font-style: normal;
   top: 20px;
   color: #ff5313;
 }
-
-/* line 321, ../../app/assets/stylesheets/himalayas.css.scss */
-div.error div.field_with_errors label.message {
+div.error div.field_with_errors label.message
+{
   color: #ff372a;
   font-size: 18px;
   top: 20px;
 }
-
 /* line 263, ../../app/assets/stylesheets/himalayas.css.scss */
-/* line 328, ../../app/assets/stylesheets/himalayas.css.scss */
 .field_with_errors label {
+
   margin-top: -4px;
   position: absolute;
   left: 5px;
@@ -373,6 +334,7 @@ div.error div.field_with_errors label.message {
 }
 
 /* My Comment */
+
 /*
 .middleline {
   background-color: #ee3c33;
@@ -383,7 +345,6 @@ div.error div.field_with_errors label.message {
 }
 */
 /* line 282, ../../app/assets/stylesheets/himalayas.css.scss */
-/* line 348, ../../app/assets/stylesheets/himalayas.css.scss */
 .map {
   position: absolute;
   top: 50px;
@@ -394,21 +355,18 @@ div.error div.field_with_errors label.message {
 }
 
 /* line 291, ../../app/assets/stylesheets/himalayas.css.scss */
-/* line 358, ../../app/assets/stylesheets/himalayas.css.scss */
 #slider.ramblingSlider {
   margin-top: 55px;
 }
 
 /*Menu page contain*/
 /* line 297, ../../app/assets/stylesheets/himalayas.css.scss */
-/* line 364, ../../app/assets/stylesheets/himalayas.css.scss */
 .comida {
   float: left;
   margin-left: 100;
 }
 
 /* line 302, ../../app/assets/stylesheets/himalayas.css.scss */
-/* line 370, ../../app/assets/stylesheets/himalayas.css.scss */
 .comida text {
   font-size: 20px;
   text-align: center;
@@ -418,26 +376,24 @@ div.error div.field_with_errors label.message {
 }
 
 /* line 311, ../../app/assets/stylesheets/himalayas.css.scss */
-/* line 379, ../../app/assets/stylesheets/himalayas.css.scss */
 .offerta {
   float: right;
   color: #f83b1b;
   width: 500px;
   font-weight: normal;
   font-size: 35px;
+
 }
 
 /* line 319, ../../app/assets/stylesheets/himalayas.css.scss */
-/* line 389, ../../app/assets/stylesheets/himalayas.css.scss */
 .image img {
-  position: absolute;
-  float: left;
-  margin: 20px;
-  top: 20px;
+position: absolute;
+float: left;
+ margin: 20px;
+ top: 20px;
 }
 
 /* line 326, ../../app/assets/stylesheets/himalayas.css.scss */
-/* line 397, ../../app/assets/stylesheets/himalayas.css.scss */
 span.menu {
   color: #f83b1b;
   font-weight: normal;
@@ -446,7 +402,6 @@ span.menu {
 }
 
 /* line 332, ../../app/assets/stylesheets/himalayas.css.scss */
-/* line 405, ../../app/assets/stylesheets/himalayas.css.scss */
 span.antes {
   color: #d8d7d9;
   font-size: 25px;
@@ -454,13 +409,11 @@ span.antes {
 }
 
 /* line 338, ../../app/assets/stylesheets/himalayas.css.scss */
-/* line 412, ../../app/assets/stylesheets/himalayas.css.scss */
 span.ahora {
   color: #080808;
 }
 
 /* line 342, ../../app/assets/stylesheets/himalayas.css.scss */
-/* line 417, ../../app/assets/stylesheets/himalayas.css.scss */
 .menus {
   float: left;
   margin: 50;
@@ -468,28 +421,26 @@ span.ahora {
 }
 
 /* line 348, ../../app/assets/stylesheets/himalayas.css.scss */
-/* line 424, ../../app/assets/stylesheets/himalayas.css.scss */
 .letter {
-  float: right;
-  margin-left: 50px;
-  top: 0px;
+float: right;
+margin-left:50px;
+top: 0px;
   width: 500px;
   height: 300px;
-  font-size: 15px;
+  font-size:15px;
   text-align: center;
 }
 
 /* line 359, ../../app/assets/stylesheets/himalayas.css.scss */
-/* line 435, ../../app/assets/stylesheets/himalayas.css.scss */
 .letter p a {
   top: 0px;
-  font-size: 20px;
+
+font-size:20px;
   color: #ff694c;
-  text-transform: capitalize;
+ text-transform: capitalize;
 }
 
 /* line 366, ../../app/assets/stylesheets/himalayas.css.scss */
-/* line 444, ../../app/assets/stylesheets/himalayas.css.scss */
 .menus a {
   font-size: 30px;
   text-align: center;
@@ -501,13 +452,12 @@ span.ahora {
 }
 
 /* line 376, ../../app/assets/stylesheets/himalayas.css.scss */
-/* line 455, ../../app/assets/stylesheets/himalayas.css.scss */
 p a img {
   margin-left: -30;
+
 }
 
 /* line 380, ../../app/assets/stylesheets/himalayas.css.scss */
-/* line 461, ../../app/assets/stylesheets/himalayas.css.scss */
 .reserva_page {
   color: #000;
   font-style: italic;
@@ -523,20 +473,18 @@ p a img {
 }
 
 /* line 394, ../../app/assets/stylesheets/himalayas.css.scss */
-/* line 476, ../../app/assets/stylesheets/himalayas.css.scss */
 .reserva_page a {
   color: #ff4500;
 }
 
 /* footer contain */
 /* line 399, ../../app/assets/stylesheets/himalayas.css.scss */
-/* line 482, ../../app/assets/stylesheets/himalayas.css.scss */
 #clear {
   clear: both;
+
 }
 
 /* line 402, ../../app/assets/stylesheets/himalayas.css.scss */
-/* line 488, ../../app/assets/stylesheets/himalayas.css.scss */
 #footer {
   background-color: yellow;
   height: 3em;
@@ -544,7 +492,6 @@ p a img {
 }
 
 /* line 408, ../../app/assets/stylesheets/himalayas.css.scss */
-/* line 495, ../../app/assets/stylesheets/himalayas.css.scss */
 div#res_photo img {
   position: relative;
   top: 60px;
@@ -552,12 +499,11 @@ div#res_photo img {
 }
 
 /* line 413, ../../app/assets/stylesheets/himalayas.css.scss */
-/* line 502, ../../app/assets/stylesheets/himalayas.css.scss */
 #telephone {
+  position: relative;
   font-size: 20px;
-  float: right;
+  top: 300px;
+  background-position: 0;
+  margin-right: 50px;
   text-align: center;
-margin-top: 30px;
-margin-right: 10px;
-clear: right;
 }
