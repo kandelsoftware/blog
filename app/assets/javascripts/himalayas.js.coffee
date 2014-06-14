@@ -12,9 +12,6 @@ jQuery  ->
 
 
 
-$(window).load ->
-  $("#slider").ramblingSlider()
-
 $(document).ready ->
   $(".owl-carousel").owlCarousel
     navigation: true
