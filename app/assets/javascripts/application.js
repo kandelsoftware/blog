@@ -16,4 +16,5 @@
 //= require jquery.rambling.slider
 //= require jquery.ui.datepicker
 //= require jquery.ui.datepicker-es
+//= require owl.carousel
 //= require_tree .

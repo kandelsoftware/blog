@@ -1,28 +1,29 @@
-/* @override http://localhost:3000/assets/himalayas.css?body=1 */
 
-/* @override http://localhost:3000/assets/himalayas.css?body=1 */
-/* @override http://localhost:3000/assets/himalayas.css?body=1 *
-html {
-  font-size: 100%;
-  overflow-y: scroll;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  margin: 0;
-}
 body {
-  width: 100%;
-  margin: 0 auto;
-  background: white;
-}
+  margin:0px;
+   height: 100%;
+  background: url(background6.jpg) rgb(255, 255, 255);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 10% 20%;
+  font-size: 1em;
 
-/*  Navigation  Contain*/
-#mainnav {
-  background: #916A31;
+}
+/*========= start navigation ======*/
+.nav {
+  background: #1d8d3d;
   height: 2.9em;
+  width: 100%;
 }
 
-#user_nav {
+.user_nav {
   float: right;
+}
+
+ul {
+  background: #ce75d0;
+  height: 2.5em;
+  width: 100%;
 }
 
 ul, li {
@@ -30,12 +31,6 @@ ul, li {
   padding: 0;
   list-style: none;
   float: left;
-}
-
-ul {
-  background: #D5973C;
-  height: 2.5em;
-  width: 100%;
 }
 
 li a {
@@ -67,362 +62,116 @@ li a:hover {
   border-bottom: .3em solid #917F63;
 }
 
-/***Main contain *****/
-#main {
-  top: 0px;
-  position: relative;
+/*=========== start of container ======*/
+.container {
+  width: 100%;
+  min-height: 600px;
 }
 
-aside.form {
-  margin: 10;
-  float: right;
-}
-
-
-aside {
-  margin-left: 10px;
-  margin-right: 10px;
-  position: relative;
-}
-
-
-
-aside#form {
+/*=========== start of form ======*/
+.form {
+  margin:5px;
+  margin-right:20px;
+  width: 230px;
   float: left;
 }
-
-
-
-aside.slideshow {
-  top: 50px;
-  left: 300px;
-  position: absolute;
-}
-
-
-
-aside.facebook {
-  position: relative;
-  float: right;
-  top: 40px;
-  margin: 10px;
-}
-
-
-
-h6 {
-  margin: 0px;
-  color: #ed5b1e;
-  text-decoration: underline;
-  text-align: center;
-  font-size: 25px;
-}
-
-/* Form contain */
-
-
-
-textchange {
-  width: 100px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  font-size: 15px;
-  background-color: white;
-  position: relative;
-  width: 17.875em;
-  margin-left: 0.125em;
-  padding: 2px;
-  margin-top: 5px;
-  border: 2px solid #4cf916;
-  text-indent: 25px;
-}
-
-
-
-
-.selectchange select:hover {
-  width: 100px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
-
-
 
 
 select {
   font-size: 15px;
-  background-color: white;
-  position: relative;
-  width: 17.875em;
-  margin-left: 0.125em;
+  width: 17em;
   text-indent: 25px;
-  margin-top: 15px;
-}
-
-
-
-
-select#himalaya_persona {
-  background: url("persona.jpg") no-repeat left;
-}
-
-
-
-
-select#himalaya_hora {
+  margin-top: 5px;
   text-transform: capitalize;
-  background: url("hora.jpg") no-repeat left;
 }
-
-
-
-
-select#himalaya_menu {
-  text-transform: capitalize;
-  background: url("menu.jpg") no-repeat left;
-}
-
-
-
-
-input {
-  width: 24.8em;
-  margin-left: 5;
-  position: relative;
-}
-
-
-
-
-input#himalaya {
-  text-transform: capitalize;
-  font-size: 15px;
-  width: 17.875em;
-  margin-left: 0.125em;
-}
-
-
-
-
-.fecha input#himalaya {
-  margin-top: 10px;
-  background: url("fecha.jpg") no-repeat left;
-  text-indent: 25px;
-}
-
 
 
 
 #himalaya_datepicker {
-  font-size: 0.88em;
+  font-size: 0.80em;
 }
 
 
 
-
-.actions input {
-  font-size: 20px;
-  background-color: white;
-  position: relative;
-  color: #009708;
+#himalaya_nombre {
   width: 10em;
-  margin-left: 25px;
 }
 
 
 
-
-input#himalaya_nombre {
-  text-transform: capitalize;
-  font-size: 15px;
-  width: 8.4em;
-  margin-left: 0.125em;
-}
-
-
-
-
-input#himalaya_email {
-  font-size: 15px;
-  width: 17.875em;
-  margin-left: 0.125em;
-}
-
-
-
-
-input#himalaya_apellidos {
-  text-transform: capitalize;
-  font-size: 15px;
-  width: 8.4em;
-  margin-left: 0.125em;
-}
-
-
-
-
-input#himalaya_telefono {
-  text-transform: capitalize;
-  font-size: 15px;
-  width: 17.875em;
-  margin-left: 2px;
-}
-
-
-
-
-input.btn.btn-primary {
-  background-color: #0c6ad4;
-  margin-left: 30px;
-}
-
-
-
-
-label {
-  color: black;
-  font-size: 15px;
-  position: relative;
-  left: 5px;
-  font-weight: normal;
+#himalaya_apellidos {
+  width: 9em;
   font-style: normal;
 }
 
+/*=========== start of slideshow ======*/
 
 
-
-div#emailnotice {
-  top: 10px;
-  background-color: #2BAA9C;
-  position: absolute;
-  left: 300px;
-  width: 650px;
-  font-size: 22px;
-  color: #ffec42;
-  text-align: center;
+.slideshow {
+  margin-top: 5px;
+  width: 53%;
+  float: left;
+  height: 540px;
 }
-
-
-
-
-.contact {
-  float: right;
-  margin: 40px 20px;
-  color: #00b09c;
-  font-size: 20px;
-  text-transform: capitalize;
-  letter-spacing: 1px;
-}
-
 
 
 
 div#slider.ramblingSlider {
-  position: absolute;
-  margin: auto;
-}
-
-
-
-
-.field_with_errors {
-  color: #D00;
-  margin-left: 20px;
-  display: inline;
-  position: relative;
-  right: 20px;
-}
-
-
-
-
-label.message {
-  margin-left: 5px;
-  padding-left: 5px;
-  font-size: 18px;
-  color: #ff5c20;
-}
-
-
-
-div.error th div.field_with_errors label.message {
-  font-size: 16px;
   margin: 0px;
-  font-weight: normal;
-  font-style: normal;
-  top: 20px;
-  color: #ff5313;
+  padding: 0px;
+}
+
+/*=========== start of facebook ======*/
+
+
+.facebook {
+  margin-top:5px;
+  margin-right:1%;
+
+}
+.facebook iframe{
+  width: 20%;
+  height: 310px;
+  float:right;
+}
+/*=========== start of footer ======*/
+
+
+.clear {
+  clear: both;
 }
 
 
 
-div.error div.field_with_errors label.message {
-  color: #ff372a;
-  font-size: 18px;
-  top: 20px;
+.footer {
+  background-color: #ff5bfb;
+  height: 3em;
+  text-align: center;
+  width: 100%;
 }
 
-
-
-
-.field_with_errors label {
-  margin-top: -4px;
-  position: absolute;
-  left: 5px;
-  opacity: 0.89;
-}
-
-/* My Comment */
-/*
-.middleline {
-  background-color: #ee3c33;
-  height: 80%;
-  position: absolute;
-  width: 4px;
-  margin-left: 270px;
-}
-*/
-
+/*=========== start of map ======*/
 
 
 .map {
-  position: absolute;
-  top: 50px;
-  left: 21em;
+  margin-left:30px;
+  float: left;
+  width:45%;
+  height:400px;
   padding: 10px;
   border-style: groove;
   border-color: #fea138;
 }
-
-
-
-
-#slider.ramblingSlider {
-  margin-top: 55px;
+.map iframe{
+  width: 100% !important;
+  height: 100% !important;
 }
 
-/*Menu page contain*/
-
-
-
-.comida {
+.menus {
   float: left;
-  margin-left: 100;
+  width: 50%;
+  margin-left: 5px;
 }
-
-
-
-
-.comida text {
-  font-size: 20px;
-  text-align: center;
-  float: left;
-  position: relative;
-  left: 50px;
-}
-
 
 
 
@@ -438,9 +187,10 @@ div.error div.field_with_errors label.message {
 
 
 .image img {
-  position: absolute;
   float: left;
   margin: 20px;
+  width: 350px;
+  height: 350px;
   top: 20px;
 }
 
@@ -471,28 +221,14 @@ span.ahora {
 }
 
 
-
-
-.menus {
-  float: left;
-  margin: 50;
-  margin-right: 40;
-}
-
-
-
-
 .letter {
-  float: right;
+  float: left;
   margin-left: 50px;
   top: 0px;
-  width: 500px;
-  height: 300px;
+  width: 400px;
   font-size: 15px;
   text-align: center;
 }
-
-
 
 
 .letter p a {
@@ -503,83 +239,28 @@ span.ahora {
 }
 
 
-
-
-.menus a {
-  font-size: 30px;
-  text-align: center;
-  margin-left: 40;
+.owl-carousel.owl-theme {
+  margin-top: 5px;
+  margin-left:2%;
+  width: 50%;
   float: left;
-  position: relative;
-  color: #ff9521;
-  left: 0px;
+  height: 600px;
+}
+
+
+.item img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 
 
-
-p a img {
-  margin-left: -30;
-}
-
-
-
-
-.reserva_page {
-  color: #000;
-  font-style: italic;
-  line-height: 20px;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-weight: bold;
-  text-align: left;
-  white-space: pre;
-  background-color: white;
-  margin-right: 500px;
-  margin-left: 30px;
-  float: none;
-}
-
-
-
-
-.reserva_page a {
-  color: #ff4500;
-}
-
-/* footer contain */
-
-
-
-#clear {
-  clear: both;
-}
-
-
-
-
-#footer {
-  background-color: yellow;
-  height: 3em;
+.foods {
+  float: left;
+  width: 25%;
+  margin-left: 40px;
   text-align: center;
-}
-
-
-
-
-div#res_photo img {
-  position: relative;
-float: right;
-margin-top: 30px;
-clear: right;}
-
-
-
-
-#telephone {
+  text-transform: capitalize;
   font-size: 20px;
-  float: right;
-  text-align: center;
-  margin-top: 30px;
-  margin-right: 10px;
-  clear: right;
 }

@@ -1,6 +1,5 @@
 class ComidasController < ApplicationController
   filter_resource_access
-layout 'menu'
 before_filter :get_menu
   # GET /comidas
   # GET /comidas.json

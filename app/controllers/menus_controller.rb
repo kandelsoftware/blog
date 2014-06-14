@@ -1,6 +1,5 @@
 class MenusController < ApplicationController
 filter_resource_access
-layout 'menu'
 
   # GET /menus
   # GET /menus.json

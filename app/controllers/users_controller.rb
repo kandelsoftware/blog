@@ -1,6 +1,5 @@
 class UsersController < ApplicationController
   filter_resource_access
-layout 'menu'
   # GET /users
   # GET /users.json
   def index

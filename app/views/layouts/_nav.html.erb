@@ -1,0 +1,17 @@
+      <div class="nav">
+	         <ul>
+                <li><%=link_to"Home",root_url%></li>
+                    <li><%=link_to"Localización",map_path%></li>
+                        <li><%=link_to"Menu",menus_path%></li>
+                            <li><%=link_to"Offerta",offerta_path%></li>
+                                <li class= "user_nav">
+                                   <%if user_signed_in? %>
+                                      <%= link_to "cerrar la sesión", destroy_user_session_path,method: :delete %>
+                                      Hola <%= current_user.username %>
+                                    <% else %>
+                                 <%= link_to "Regístrate", new_user_registration_path  %>
+                                <%= link_to "Entrar", new_user_session_path %>
+                             <% end %></li>
+                            <!-- .user_nav-->
+                        </ul>
+                    </div><!-- .nav-->

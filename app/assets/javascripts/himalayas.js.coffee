@@ -14,3 +14,12 @@ jQuery  ->
 
 $(window).load ->
   $("#slider").ramblingSlider()
+
+$(document).ready ->
+  $(".owl-carousel").owlCarousel
+    navigation: true
+    autoPlay: 4000 #Set AutoPlay to 3 seconds
+    paginationSpeed: 700
+    singleItem: true
+
+  return

@@ -13,5 +13,7 @@
  *= require jquery.ui.datepicker
  *= require himalayas
   *= require users
+  *= require owl.carousel
+   *= require owl.theme
  *= require jquery-ui-1.10.4.custom.min
  */
