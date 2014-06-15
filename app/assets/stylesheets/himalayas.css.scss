@@ -1,14 +1,13 @@
-
 body {
-  margin:0px;
-   height: 100%;
-  background: url(background6.jpg) rgb(255, 255, 255);
+  margin: 0px;
+  height: 100%;
+  background: url(background6.jpg) white;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 10% 20%;
+  background-position: center top;
   font-size: 1em;
-
 }
+
 /*========= start navigation ======*/
 .nav {
   background: #1d8d3d;
@@ -70,12 +69,11 @@ li a:hover {
 
 /*=========== start of form ======*/
 .form {
-  margin:5px;
-  margin-right:20px;
+  margin: 5px;
+  margin-right: 20px;
   width: 230px;
   float: left;
 }
-
 
 select {
   font-size: 15px;
@@ -85,18 +83,13 @@ select {
   text-transform: capitalize;
 }
 
-
-
 #himalaya_datepicker {
   font-size: 0.80em;
 }
 
-
-
 #himalaya_nombre {
   width: 10em;
 }
-
 
 
 #himalaya_apellidos {
@@ -106,14 +99,12 @@ select {
 
 /*=========== start of slideshow ======*/
 
-
 .slideshow {
   margin-top: 5px;
   width: 53%;
   float: left;
   height: 540px;
 }
-
 
 
 div#slider.ramblingSlider {
@@ -123,24 +114,23 @@ div#slider.ramblingSlider {
 
 /*=========== start of facebook ======*/
 
-
 .facebook {
-  margin-top:5px;
-  margin-right:1%;
-
+  margin-top: 5px;
+  margin-right: 1%;
 }
-.facebook iframe{
+
+
+.facebook iframe {
   width: 20%;
   height: 310px;
-  float:right;
+  float: right;
 }
-/*=========== start of footer ======*/
 
+/*=========== start of footer ======*/
 
 .clear {
   clear: both;
 }
-
 
 
 .footer {
@@ -152,27 +142,28 @@ div#slider.ramblingSlider {
 
 /*=========== start of map ======*/
 
-
 .map {
-  margin-left:30px;
+  margin-left: 30px;
   float: left;
-  width:45%;
-  height:400px;
+  width: 45%;
+  height: 400px;
   padding: 10px;
   border-style: groove;
   border-color: #fea138;
 }
-.map iframe{
+
+
+.map iframe {
   width: 100% !important;
   height: 100% !important;
 }
+
 
 .menus {
   float: left;
   width: 50%;
   margin-left: 5px;
 }
-
 
 
 .offerta {
@@ -184,8 +175,6 @@ div#slider.ramblingSlider {
 }
 
 
-
-
 .image img {
   float: left;
   margin: 20px;
@@ -193,8 +182,6 @@ div#slider.ramblingSlider {
   height: 350px;
   top: 20px;
 }
-
-
 
 
 span.menu {
@@ -205,15 +192,11 @@ span.menu {
 }
 
 
-
-
 span.antes {
   color: #d8d7d9;
   font-size: 25px;
   text-decoration: line-through;
 }
-
-
 
 
 span.ahora {
@@ -241,7 +224,7 @@ span.ahora {
 
 .owl-carousel.owl-theme {
   margin-top: 5px;
-  margin-left:2%;
+  margin-left: 2%;
   width: 50%;
   float: left;
   height: 600px;
@@ -255,7 +238,6 @@ span.ahora {
 }
 
 
-
 .foods {
   float: left;
   width: 25%;
@@ -263,4 +245,143 @@ span.ahora {
   text-align: center;
   text-transform: capitalize;
   font-size: 20px;
+}
+
+@media (max-width: 950px) {
+
+
+
+
+  .form {
+    margin: 5px;
+    margin-right: 20px;
+    width: 230px;
+    float: left;
+  }
+
+  .slideshow {
+    float: left;
+    width: 91.4988814317%;
+    margin-top: 5px;
+
+    margin-left: 2.00993%;
+  }
+
+  .owl-carousel.owl-theme {
+    margin-top: 5px;
+    margin-left: 2%;
+    width: 70%;
+    height: 350px;
+    float: left;
+  }
+
+  .map {
+  float: left;
+  margin-left: 5px;
+  margin-bottom: 40px;
+  width:60%;
+  height: 450px;
+  padding: 10px;
+  border-style: groove;
+  border-color: #fea138;
+}
+
+
+.map iframe {
+  width: 100% !important;
+  height: 100% !important;
+}
+  .facebook iframe {
+    width: 250px;
+    height: 310px;
+    float: left;
+  }
+  .facebook {
+  clear: both;
+    margin-top: 0px;
+    margin-right: 1%;
+  }
+
+
+
+}
+
+@media   (max-width: 447px) {
+
+  body {
+    font-size: 1em;
+  }
+
+
+
+
+  .nav {
+    background: #1d8d3d;
+    height: 5em;
+    width: 100%;
+  }
+
+
+
+li  {
+  display: block;
+  padding: 0 1em;
+  color: white;
+  text-decoration: none;
+  font-size: 19px;
+}
+ul {
+  background: #ce75d0;
+  height: 4.5em;
+  width: 100%;
+}
+
+li a:hover {
+  background: url("nav_rollover.png") no-repeat center center;
+padding: 0 1em;}
+
+
+  .slideshow {
+    float: left;
+    width: 91.4988814317%;
+    margin-top: 5px;
+    margin-left: 2.00993%;
+  }
+
+
+  .owl-carousel.owl-theme {
+    margin-top: 5px;
+    margin-left: 2%;
+    width: 90%;
+    height: 350px;
+    float: left;
+  }
+
+.map {
+  float: left;
+  margin-left: 5px;
+  margin-bottom: 10px;
+  width:89%;
+  height: 400px;
+  padding: 10px;
+  border-style: groove;
+  border-color: #fea138;
+}
+
+
+.map iframe {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+  .facebook iframe {
+    width: 250px;
+    height: 310px;
+    float: left;
+  }
+  .facebook {
+    margin-top: 0px;
+    margin-right: 1%;
+  }
+
 }
