@@ -91,7 +91,6 @@ select {
   width: 10em;
 }
 
-
 #himalaya_apellidos {
   width: 9em;
   font-style: normal;
@@ -247,23 +246,50 @@ span.ahora {
   font-size: 20px;
 }
 
-@media (max-width:1000px) and (min-width:500px)
- {
+@media (max-width: 1000px) and (min-width: 500px) {
+
+   .user_nav {
+  float: left;
+}
+  .nav {
+    background: #1d8d3d;
+    height: 5em;
+    width: 100%;
+  }
+
+  li {
+    display: block;
+    padding: 0 .5em;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+  }
 
 
+  ul {
+    background: #ce75d0;
+    height: 4.5em;
+    width: 100%;
+  }
 
 
+  li a:hover {
+    background: url("nav_rollover.png") no-repeat center center;
+    padding: 0 1em;
+  }
   .form {
     margin: 5px;
     width: 230px;
     float: left;
   }
 
+
   .slideshow {
     float: left;
     width: 91.4988814317%;
     margin-top: 5px;
   }
+
 
   .owl-carousel.owl-theme {
     margin-top: 5px;
@@ -272,43 +298,42 @@ span.ahora {
     float: left;
   }
 
+
   .map {
-  float: left;
-  margin: 5px;
-  width:60%;
-  height: 450px;
-  padding: 10px;
-  border-style: groove;
-  border-color: #fea138;
-}
+    float: left;
+    margin: 5px;
+    width: 60%;
+    height: 450px;
+    padding: 10px;
+    border-style: groove;
+    border-color: #fea138;
+  }
 
 
-.map iframe {
-  width: 100% !important;
-  height: 100% !important;
-}
+  .map iframe {
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+
   .facebook iframe {
     width: 250px;
     height: 310px;
     float: left;
   }
+
+
   .facebook {
-  clear: both;
+    clear: both;
     margin-top: 0px;
     margin-right: 1%;
   }
-
-
-
 }
-@media (max-width:500px) and (min-width:250px)
- {
+@media (max-width: 500px) and (min-width: 250px) {
 
   body {
     font-size: 1em;
   }
-
-
 
 
   .nav {
@@ -316,25 +341,31 @@ span.ahora {
     height: 5em;
     width: 100%;
   }
-
-
-
-li  {
-  display: block;
-  padding: 0 1em;
-  color: white;
-  text-decoration: none;
-  font-size: 19px;
-}
-ul {
-  background: #ce75d0;
-  height: 4.5em;
-  width: 100%;
+  .user_nav {
+  float: left;
 }
 
-li a:hover {
-  background: url("nav_rollover.png") no-repeat center center;
-padding: 0 1em;}
+
+  li {
+    display: block;
+    padding: 0 .5em;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+  }
+
+
+  ul {
+    background: #ce75d0;
+    height: 4.5em;
+    width: 100%;
+  }
+
+
+  li a:hover {
+    background: url("nav_rollover.png") no-repeat center center;
+    padding: 0 1em;
+  }
 
 
   .slideshow {
@@ -353,31 +384,34 @@ padding: 0 1em;}
     float: left;
   }
 
-.map {
-  float: left;
-  margin-left: 5px;
-  margin-bottom: 10px;
-  width:89%;
-  height: 400px;
-  padding: 10px;
-  border-style: groove;
-  border-color: #fea138;
-}
+
+  .map {
+    float: left;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    width: 89%;
+    height: 400px;
+    padding: 10px;
+    border-style: groove;
+    border-color: #fea138;
+  }
 
 
-.map iframe {
-  width: 100% !important;
-  height: 100% !important;
-}
+  .map iframe {
+    width: 100% !important;
+    height: 100% !important;
+  }
+
 
   .facebook iframe {
     width: 250px;
     height: 310px;
     float: left;
   }
+
+
   .facebook {
     margin-top: 0px;
     margin-right: 1%;
   }
-
 }
