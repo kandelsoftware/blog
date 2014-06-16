@@ -7,14 +7,32 @@ body {
   background-position: center top;
   font-size: 1em;
 }
+.field_with_errors {
+  margin-left: 20px;
+  display: inline;
+  position: relative;
+  right: 20px;
+}
+.field_with_errors label.message {
+  margin-left: 15px;
+  padding-left: 5px;
+  font-size:18px;
+  color: #ff5c20;
+}
+.field_with_errors label {
 
-/*========= start navigation ======*/
+  font-weight: normal;
+  font-style: normal;
+}/*========= start navigation ======*/
 .nav {
   background: #1d8d3d;
   height: 2.9em;
   width: 100%;
 }
 
+tr  label{
+  color: #080808;
+}
 .user_nav {
   float: right;
 }
@@ -24,7 +42,6 @@ ul {
   height: 2.5em;
   width: 100%;
 }
-
 ul, li {
   margin: 0;
   padding: 0;
@@ -248,14 +265,17 @@ span.ahora {
 
 @media (max-width: 1000px) and (min-width: 500px) {
 
-   .user_nav {
-  float: left;
-}
+  .user_nav {
+    float: left;
+  }
+
+
   .nav {
     background: #1d8d3d;
     height: 5em;
     width: 100%;
   }
+
 
   li {
     display: block;
@@ -277,6 +297,8 @@ span.ahora {
     background: url("nav_rollover.png") no-repeat center center;
     padding: 0 1em;
   }
+
+
   .form {
     margin: 5px;
     width: 230px;
@@ -328,6 +350,20 @@ span.ahora {
     margin-top: 0px;
     margin-right: 1%;
   }
+  .menus {
+    float: left;
+    width: 60%;
+    margin-left: 5px;
+  }
+
+  .foods {
+  float: left;
+  width: 40%;
+  margin-left: 40px;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 20px;
+}
 }
 @media (max-width: 500px) and (min-width: 250px) {
 
@@ -341,9 +377,11 @@ span.ahora {
     height: 5em;
     width: 100%;
   }
+
+
   .user_nav {
-  float: left;
-}
+    float: left;
+  }
 
 
   li {
@@ -366,12 +404,15 @@ span.ahora {
     background: url("nav_rollover.png") no-repeat center center;
     padding: 0 1em;
   }
-.form {
-  margin: 5px;
-  margin-left: 20px;
-  width: 230px;
-  float: left;
-}
+
+
+  .form {
+    margin: 5px;
+    margin-left: 20px;
+    width: 230px;
+    float: left;
+  }
+
 
   .slideshow {
     float: left;
@@ -420,68 +461,83 @@ span.ahora {
     margin-right: 1%;
   }
 
-.menus {
-  float: left;
-  width: 50%;
-  margin-left: 5px;
-}
+
+  .menus {
+    float: left;
+    width: 100%;
+    margin-left: 5px;
+  }
 
 
-.offerta {
-
-  float: left;
-  color: #f83b1b;
-  width: 300px;
-  font-weight: normal;
-}
-
-
-.image img {
-  float: left;
-  margin: 20px;
-  width: 250px;
-  height: 250px;
-  top: 20px;
-}
+  .offerta {
+    float: left;
+    color: #f83b1b;
+    width: 300px;
+    font-weight: normal;
+  }
 
 
-span.menu {
-  color: #f83b1b;
-  font-weight: normal;
-  margin-left: 5px;
-  font-size: 20px;
-
-  text-decoration: underline;
-}
-
-
-span.antes {
-  color: #d8d7d9;
-  font-size: 15px;
-  text-decoration: line-through;
-}
+  .image img {
+    float: left;
+    margin: 20px;
+    width: 250px;
+    height: 250px;
+    top: 20px;
+  }
 
 
-span.ahora {
-  color: #080808;
+  span.menu {
+    color: #f83b1b;
+    font-weight: normal;
+    margin-left: 5px;
     font-size: 20px;
+    text-decoration: underline;
+  }
+
+
+  span.antes {
+    color: #d8d7d9;
+    font-size: 15px;
+    text-decoration: line-through;
+  }
+
+
+  span.ahora {
+    color: #080808;
+    font-size: 20px;
+  }
+
+
+  .letter {
+    float: left;
+    top: 0px;
+    width: 250px;
+    font-size: 15px;
+    text-align: center;
+  }
+
+
+  .letter p a {
+    top: 0px;
+    font-size: 20px;
+    color: #ff694c;
+    text-transform: capitalize;
+  }
+
+
+ .foods a img {
+  display: block;
+  width: 100%;
 
 }
 
 
-.letter {
+.foods {
   float: left;
-  top: 0px;
-  width: 250px;
-  font-size: 15px;
+  width: 40%;
+  margin-left: 40px;
   text-align: center;
-}
-
-
-.letter p a {
-  top: 0px;
-  font-size: 20px;
-  color: #ff694c;
   text-transform: capitalize;
+  font-size: 20px;
 }
 }
