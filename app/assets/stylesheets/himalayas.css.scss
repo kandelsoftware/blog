@@ -366,7 +366,12 @@ span.ahora {
     background: url("nav_rollover.png") no-repeat center center;
     padding: 0 1em;
   }
-
+.form {
+  margin: 5px;
+  margin-left: 20px;
+  width: 230px;
+  float: left;
+}
 
   .slideshow {
     float: left;
@@ -414,4 +419,69 @@ span.ahora {
     margin-top: 0px;
     margin-right: 1%;
   }
+
+.menus {
+  float: left;
+  width: 50%;
+  margin-left: 5px;
+}
+
+
+.offerta {
+
+  float: left;
+  color: #f83b1b;
+  width: 300px;
+  font-weight: normal;
+}
+
+
+.image img {
+  float: left;
+  margin: 20px;
+  width: 250px;
+  height: 250px;
+  top: 20px;
+}
+
+
+span.menu {
+  color: #f83b1b;
+  font-weight: normal;
+  margin-left: 5px;
+  font-size: 20px;
+
+  text-decoration: underline;
+}
+
+
+span.antes {
+  color: #d8d7d9;
+  font-size: 15px;
+  text-decoration: line-through;
+}
+
+
+span.ahora {
+  color: #080808;
+    font-size: 20px;
+
+}
+
+
+.letter {
+  float: left;
+  top: 0px;
+  width: 250px;
+  font-size: 15px;
+  text-align: center;
+}
+
+
+.letter p a {
+  top: 0px;
+  font-size: 20px;
+  color: #ff694c;
+  text-transform: capitalize;
+}
 }
