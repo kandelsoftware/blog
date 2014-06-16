@@ -77,14 +77,14 @@ li a:hover {
 
 select {
   font-size: 15px;
-  width: 17em;
+  width: 15em;
   text-indent: 25px;
   margin-top: 5px;
   text-transform: capitalize;
 }
 
 #himalaya_datepicker {
-  font-size: 0.80em;
+  font-size: 0.75em;
 }
 
 #himalaya_nombre {
@@ -247,14 +247,14 @@ span.ahora {
   font-size: 20px;
 }
 
-@media (max-width: 950px) {
+@media (max-width:1000px) and (min-width:500px)
+ {
 
 
 
 
   .form {
     margin: 5px;
-    margin-right: 20px;
     width: 230px;
     float: left;
   }
@@ -263,22 +263,18 @@ span.ahora {
     float: left;
     width: 91.4988814317%;
     margin-top: 5px;
-
-    margin-left: 2.00993%;
   }
 
   .owl-carousel.owl-theme {
     margin-top: 5px;
-    margin-left: 2%;
-    width: 70%;
+    width: 60%;
     height: 350px;
     float: left;
   }
 
   .map {
   float: left;
-  margin-left: 5px;
-  margin-bottom: 40px;
+  margin: 5px;
   width:60%;
   height: 450px;
   padding: 10px;
@@ -305,8 +301,8 @@ span.ahora {
 
 
 }
-
-@media   (max-width: 447px) {
+@media (max-width:500px) and (min-width:250px)
+ {
 
   body {
     font-size: 1em;
