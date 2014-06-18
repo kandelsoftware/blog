@@ -6,8 +6,8 @@
 
 <% @comidas.each do |comida| %>
 <div class="foods">
- <text> <%= comida.name %><td><%= "#{comida.price}€" %></text>
- <br><%= link_to image_tag("#{comida.img}.jpg",size: '150x150'), [@menu,comida] %>
+ <%= comida.name %><td><%= "#{comida.price}€" %>
+ <%= link_to image_tag("foods_photos#{comida.img}.jpg",size: '150x150'), [@menu,comida] %>
   <td><%#= link_to 'Edit', edit_menu_comida_path(@menu,comida) %>
   <td><%#= link_to 'Destroy',[ @menu,comida], method: :delete, data: { confirm: 'Are you sure?' } %>
   <td><%#= link_to 'New Comida', new_menu_comida_path(@menu) %>
