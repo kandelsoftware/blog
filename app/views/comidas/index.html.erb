@@ -3,10 +3,11 @@
 
 </div>
 <div class="menus">
+<%= link_to 'volver', menus_path %>
 
-<% @comidas.each do |comida| %>
+<p><% @comidas.each do |comida| %></p>
 <div class="foods">
- <%= comida.name %><td><%= "#{comida.price}€" %>
+ <%= comida.name %><td><%="#{comida.price}€" %>
  <%= link_to image_tag("#{comida.img}.jpg",size: '150x150'), [@menu,comida] %>
   <td><%#= link_to 'Edit', edit_menu_comida_path(@menu,comida) %>
   <td><%#= link_to 'Destroy',[ @menu,comida], method: :delete, data: { confirm: 'Are you sure?' } %>

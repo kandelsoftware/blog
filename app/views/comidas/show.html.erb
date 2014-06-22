@@ -17,19 +17,19 @@
 
 <p>
   <b>Price:</b>
-  <%= @comida.price %>
+  <%="#{@comida.price}€" %>
 </p>
 
 <p>
-  <b>Img:</b>
-  <%= @comida.img %>
+<%= link_to image_tag("#{@comida.img}.jpg",size: '150x150') %>
 </p>
 
 <p>
   <b>Description:</b>
   <%= @comida.description %>
 </p>
-
+ <% if permitted_to? :edit,@comida %>
 
 <%= link_to 'Edit', edit_menu_comida_path(@menu,@comida) %> |
+<% end %>
 <%= link_to 'Back', menu_comidas_path(@menu) %>
