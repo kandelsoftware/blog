@@ -13,8 +13,7 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
-
 /config/database.yml
 /config/database.example.yml
 /config/deploy.rb
-/environments/production.rb
+/config/environments/production.rb
