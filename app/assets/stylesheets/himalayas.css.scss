@@ -119,14 +119,11 @@ select {
   margin-top: 5px;
   width: 53%;
   float: left;
-  height: 540px;
+  height: 340px;
 }
 
 
-div#slider.ramblingSlider {
-  margin: 0px;
-  padding: 0px;
-}
+
 
 /*=========== start of facebook ======*/
 
@@ -252,7 +249,10 @@ span.ahora {
   float: left;
   height: 600px;
 }
-
+.owl-carousel .owl-item{
+    height:416px;
+    width:100%;
+}
 
 .item img {
   display: block;
@@ -327,7 +327,10 @@ span.ahora {
     float: left;
   }
 
-
+.owl-carousel .owl-item{
+    height:416px;
+    width:100%;
+}
   .map {
     float: left;
     margin: 5px;
@@ -451,7 +454,10 @@ span.ahora {
     float: left;
   }
 
-
+.owl-carousel .owl-item{
+    height:416px;
+    width:100%;
+}
   .map {
     float: left;
     margin-left: 5px;

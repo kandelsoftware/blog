@@ -16,7 +16,7 @@ $(document).ready ->
   $(".owl-carousel").owlCarousel
     navigation: true
     autoPlay: 4000 #Set AutoPlay to 3 seconds
-    paginationSpeed: 700
+    paginationSpeed: 900
     singleItem: true
 
   return
