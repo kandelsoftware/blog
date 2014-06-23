@@ -3,7 +3,7 @@ class Himalaya < ActiveRecord::Base
    belongs_to :user
   validates_presence_of :persona, :on => :create,    :message =>"Personas no puede  vacio"
  validates :email,:presence => { :message =>"e-mail no puede  vacio"}, format: { with: /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/i, :message => "entrar
-  e-mail válida! " }
+  E-mail válida! " }
   validates_presence_of :menu, :on => :create,       :message => "Menu no puede  vacio"
   validates_presence_of :fecha, :on => :create,       :message => "Fecha no puede  vacio"
   validates_presence_of :hora, :on => :create,        :message => "Hora no puede  vacio"

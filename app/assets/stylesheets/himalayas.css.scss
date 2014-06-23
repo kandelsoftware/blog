@@ -37,7 +37,6 @@ tr label {
 }
 .actions{
   text-align: center;
-    height: 5em;
 }
 
 /* My Comment */
@@ -47,7 +46,6 @@ tr label {
   color: #1b5729;
     font-size: 25px;
     width: 6em;
-    height: 4em;
 }
 .user_nav {
   float: right;
@@ -109,6 +107,13 @@ li a:hover {
   margin-left: 1em;
   color: #ed5b1e;
   text-decoration: underline;
+}
+#emailnotice{
+  top: 10px;
+  background-color: #2BAA9C;
+  font-size: 22px;
+  color: #ffec42;
+  text-align: center;
 }
 .form {
   margin: 5px;
