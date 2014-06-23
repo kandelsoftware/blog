@@ -1,0 +1,29 @@
+ <div class= "form ">
+
+ <%= render :partial=>'himalayas/form' %>
+ </div>
+
+<div class= "menus">
+
+<% @menus.each do |menu| %>
+<div class= "foods">
+
+                 <%= link_to menu.name, menu_comidas_path(menu) %>
+  <%=link_to (image_tag"#{(menu.image) }.jpg",size: '150x150'),menu_comidas_path(menu)%>
+
+
+
+                  <% if permitted_to? :edit,menu %>
+    <%= link_to 'Edit', edit_menu_path(menu) %>
+    <% end %>
+                  <% if permitted_to? :destroy,menu %>
+
+   <%= link_to 'Destroy', menu, method: :delete, data: { confirm: 'Are you sure?' } %>
+      <% end %>
+</div>
+
+<% end %>
+</div>
+
+
+
