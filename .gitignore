@@ -16,5 +16,5 @@
 /config/
 /config/database.yml
 /config/database.example.yml
-/config/deploy.rb
+config/deploy.rb
 /config/environments/production.rb
