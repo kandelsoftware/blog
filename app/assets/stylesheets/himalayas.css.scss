@@ -30,8 +30,24 @@ body {
   width: 100%;
 }
 
-tr  label{
+tr label {
   color: #080808;
+  font-weight: normal;
+  font-style: normal;
+}
+.actions{
+  text-align: center;
+    height: 5em;
+}
+
+/* My Comment */
+
+.actions input{
+  text-align: center;
+  color: #1b5729;
+    font-size: 25px;
+    width: 6em;
+    height: 4em;
 }
 .user_nav {
   float: right;
@@ -85,31 +101,47 @@ li a:hover {
 }
 
 /*=========== start of form ======*/
+
+.reserva_mesa{
+  color: #ed5b1e;
+  letter-spacing: 3px;
+  font-size: 22px;
+  margin-left: 1em;
+  color: #ed5b1e;
+  text-decoration: underline;
+}
 .form {
   margin: 5px;
-  margin-right: 20px;
-  width: 230px;
+  margin-right: 10px;
+  width: 250px;
   float: left;
 }
 
 select {
-  font-size: 15px;
+  font-size:18px;
   width: 15em;
-  text-indent: 25px;
+  text-indent:10px;
   margin-top: 5px;
   text-transform: capitalize;
 }
+input {
+  width: 17.5em;
+  font-size:15px;
+
+}
 
 #himalaya_datepicker {
-  font-size: 0.75em;
+  font-size: 0.87em;
 }
 
 #himalaya_nombre {
-  width: 10em;
+  width: 8em;
+font-style: normal;
+
 }
 
 #himalaya_apellidos {
-  width: 9em;
+  width: 8em;
   font-style: normal;
 }
 
@@ -308,7 +340,7 @@ span.ahora {
 
   .form {
     margin: 5px;
-    width: 230px;
+    width: 250px;
     float: left;
   }
 
