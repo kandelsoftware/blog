@@ -5,8 +5,9 @@ Restaurant::Application.routes.draw do
   resources :users
    get "map" ,to:"info#map"
    get "offerta" ,to:"info#offerta"
-
-resources :himalayas
+   resources :himalayas
+   #resources :himalayas,only:[:index,:new,:create]
+  #resources :himalayas,path:"",except:[:index,:new,:create]
 
  resources :menus  do
       resources :comidas

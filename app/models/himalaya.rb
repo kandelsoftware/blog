@@ -1,5 +1,9 @@
 class Himalaya < ActiveRecord::Base
-  attr_accessible :persona, :email, :fecha, :hora, :menu, :nombre, :telefono,:apellidos
+
+#  extend FriendlyId
+# friendly_id :nombre,use: :slugged
+#validates :slug, uniqueness:true, presence:true
+ attr_accessible :persona, :email, :fecha, :hora, :menu, :nombre, :telefono,:apellidos
    belongs_to :user
   validates_presence_of :persona, :on => :create,    :message =>"Personas no puede  vacio"
  validates :email,:presence => { :message =>"e-mail no puede  vacio"}, format: { with: /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/i, :message => "entrar

@@ -11,7 +11,7 @@ gem 'sqlite3'
 end
 
 
-
+#gem 'friendly_id', '~>  4.0.0'
 group :production do
 gem 'mysql2'
 end

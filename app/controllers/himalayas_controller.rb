@@ -44,7 +44,7 @@ filter_resource_access
     respond_to do |format|
       if @himalaya.save
     UserMailer.reserva_confirmation(@himalaya).deliver
-        format.html { redirect_to root_path, notice: 'Gracias por su reserva.| Datos de reserva envia en su correo electronico'  }
+        format.html { redirect_to  root_url, notice: 'Gracias por su reserva.| Datos de reserva envia en su correo electronico'  }
         format.json { render json: @himalaya, status: :created, location: @himalaya }
       else
         format.html { render action: "new" }

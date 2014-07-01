@@ -5,7 +5,7 @@ filter_resource_access
   # GET /menus.json
   def index
     @menus = Menu.all
-himalaya_form
+    himalaya_form
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @menus }
@@ -17,7 +17,6 @@ himalaya_form
   # GET /menus/1.json
   def show
       himalaya_form
-
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @menu }
