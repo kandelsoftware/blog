@@ -1,4 +1,7 @@
 Restaurant::Application.routes.draw do
+  resources :gratis
+
+
   resources :assignments
   resources :roles
   devise_for :users

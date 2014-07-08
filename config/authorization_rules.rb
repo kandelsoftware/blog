@@ -1,6 +1,6 @@
 authorization do
   role :admin do
-    has_permission_on [:himalayas,:users,:menus,:comidas] ,:to => [:index, :show, :new, :create, :edit, :update, :destroy]
+    has_permission_on [:himalayas,:users,:menus,:comidas,:gratis] ,:to => [:index, :show, :new, :create, :edit, :update, :destroy]
   end
 
   role :guest do

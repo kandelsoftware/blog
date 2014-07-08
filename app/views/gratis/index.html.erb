@@ -1,0 +1,23 @@
+<h1>Listing gratis</h1>
+
+<table>
+  <tr>
+    <th>Email</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @gratis.each do |grati| %>
+  <tr>
+    <td><%= grati.email %></td>
+    <td><%= link_to 'Show', grati %></td>
+    <td><%= link_to 'Edit', edit_grati_path(grati) %></td>
+    <td><%= link_to 'Destroy', grati, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Grati', new_grati_path %>

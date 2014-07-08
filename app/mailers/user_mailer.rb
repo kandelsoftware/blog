@@ -8,6 +8,6 @@ class UserMailer < ActionMailer::Base
   #
   def reserva_confirmation(himalaya)
     @himalaya = himalaya
-    mail to: himalaya.email,subject:"conformation de reserva"
+    mail to: himalaya.email,subject:"conformation  reserva  de himalaya"
   end
 end
