@@ -732,13 +732,13 @@ ol.rhino-bullets {
     margin-left: 3%; }
 
   /*=========== change in code fixed ======*/
-  .form {
-    position: relative;
-    top: 0px;
-    left: 2em;
-    width: 60%;
-    z-index: 3;
-    height: 82%; }
+ .form {
+     position:static;
+     top: 0px;
+     margin-left: 40px;
+     width: 60%;
+     z-index: 3;
+     height: 100%; }
 
   .himalaya-description {
     display: none; }
