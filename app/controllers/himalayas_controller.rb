@@ -5,8 +5,9 @@ filter_resource_access
   # GET /himalayas
   # GET /himalayas.json
   def index
-    @himalayas = Himalaya.all
 
+    @himalayas ||= Himalaya.limit(10).order('id desc')
+    @descuentos ||= Descuento.limit(10).order('id desc')
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @himalayas }
@@ -26,7 +27,6 @@ filter_resource_access
   # GET /himalayas/new
   # GET /himalayas/new.json
   def new
-
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @himalaya }
@@ -43,8 +43,8 @@ filter_resource_access
 
     respond_to do |format|
       if @himalaya.save
-    UserMailer.reserva_confirmation(@himalaya).deliver
-        format.html { redirect_to  root_url, notice: 'Gracias por su reserva.| Datos de reserva envia en su correo electronico'  }
+        UserMailer.reserva_confirmation(@himalaya).deliver
+        format.html { redirect_to  @himalaya, notice: "Gracias   #{@himalaya.nombre}  por  reserva.| Datos de reserva envia en su correo electronico"  }
         format.json { render json: @himalaya, status: :created, location: @himalaya }
       else
         format.html { render action: "new" }

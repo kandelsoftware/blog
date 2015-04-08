@@ -4,7 +4,7 @@ before_filter :get_menu
   # GET /comidas
   # GET /comidas.json
   def index
-    @comidas= @menu.comidas.all
+    @comidas||= @menu.comidas.all
     himalaya_form
     respond_to do |format|
       format.html # index.html.erb
@@ -15,7 +15,8 @@ before_filter :get_menu
   # GET /comidas/1
   # GET /comidas/1.json
   def show
-   @comida=@menu.comidas.find(params[:id])
+   @comida||=@menu.comidas.find(params[:id])
+       himalaya_form
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @comida }
@@ -26,7 +27,8 @@ before_filter :get_menu
   # GET /comidas/new
   # GET /comidas/new.json
   def new
-@comida=@menu.comidas.build
+@comida||=@menu.comidas.build
+    himalaya_form
 
     respond_to do |format|
       format.html # new.html.erb
@@ -36,6 +38,8 @@ before_filter :get_menu
 
   # GET /comidas/1/edit
   def edit
+        himalaya_form
+
     @comida=@menu.comidas.find(params[:id])
 
   end
@@ -78,7 +82,6 @@ before_filter :get_menu
   # DELETE /comidas/1.json
   def destroy
     @comida=@menu.comidas.find(params[:id])
-
     @comida.destroy
 himalaya_form
     respond_to do |format|
@@ -86,15 +89,18 @@ himalaya_form
       format.json { head :no_content }
     end
   end
-end
-private
+
+
+
+  private
 def get_menu
   if params[:menu_id]
-  @menu=Menu.find(params[:menu_id])
+  @menu ||=Menu.find(params[:menu_id])
   end
 end
 
   def himalaya_form
-    @himalaya = Himalaya.new
+    @himalaya ||= Himalaya.new
 
   end
+end

@@ -1,20 +1,32 @@
 Restaurant::Application.routes.draw do
-  resources :gratis
 
 
+  resources :exitpops
+
+
+  resources :descuentos
+
+#resources :restaurante_hindu_menus, path: '/restaurante-hindu'
   resources :assignments
   resources :roles
   devise_for :users
   resources :users
-   get "map" ,to:"info#map"
-   get "offerta" ,to:"info#offerta"
+  resources :infos
+   get "map" ,to:"infos#map"
+   get "menudegustation",to:"infos#menudegustation"
+   get "menudegustation18",to:"infos#menudegustation18"
+
    resources :himalayas
    #resources :himalayas,only:[:index,:new,:create]
   #resources :himalayas,path:"",except:[:index,:new,:create]
 
- resources :menus  do
-      resources :comidas
+
+ resources :menus,path: '/restaurante-hindu-barcelona' do
+  resources :comidas,path: '/comida-india'
 end
+resources :menus
+resources :comidas
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

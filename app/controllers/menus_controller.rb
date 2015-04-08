@@ -4,7 +4,7 @@ filter_resource_access
   # GET /menus
   # GET /menus.json
   def index
-    @menus = Menu.all
+    @menus ||= Menu.all
     himalaya_form
     respond_to do |format|
       format.html # index.html.erb
@@ -75,7 +75,7 @@ filter_resource_access
   # DELETE /menus/1.json
   def destroy
     @menu.destroy
-himalaya_form
+    himalaya_form
     respond_to do |format|
       format.html { redirect_to menus_url }
       format.json { head :no_content }
@@ -84,7 +84,7 @@ himalaya_form
 
 private
   def himalaya_form
-    @himalaya = Himalaya.new
+    @himalaya ||= Himalaya.new
 
   end
 end

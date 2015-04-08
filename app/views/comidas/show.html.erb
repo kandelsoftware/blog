@@ -1,13 +1,11 @@
 <p id="notice"><%= notice %></p>
-
-<div id="form">
+<div class="form">
  <%= render :partial=>'himalayas/form' %>
 
 </div>
 
 <p>
-  <b>Menu:</b>
-  <%= @comida.menu_id %>
+  <%#= @comida.menu_id %>
 </p>
 
 <p>
@@ -33,3 +31,4 @@
 <%= link_to 'Edit', edit_menu_comida_path(@menu,@comida) %> |
 <% end %>
 <%= link_to 'volver', menu_comidas_path(@menu) %>
+

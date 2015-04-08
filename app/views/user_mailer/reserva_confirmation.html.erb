@@ -32,19 +32,29 @@
           <![endif]--></td>
       </tr><tr><td class="innerpadding borderbottom" style="border-bottom: 1px solid #f2eeed">
           <table width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td class="h2" style="color: #275e0c;font-family: sans-serif;padding: 0 0 15px 0;font-size: 24px;line-height: 28px;font-weight: bold;position: relative;float: none;text-align: center">
-               Gracias para su reserva!
+               Gracias <%= @himalaya.nombre %> <%= @himalaya.apellidos %> para su reserva!
               </td>
 
             </tr><tr><td class="bodycopy" style="color: #153643;font-family: sans-serif;font-size: 16px;line-height: 22px">
-Reserva a nombre de      :<%= @himalaya.nombre %><%= @himalaya.apellidos %> <p><p>
+<% if @himalaya.menu == "Carta 40%" %>
+menu select              :<%= @himalaya.menu %> </p> <p>
 Fecha de la reserva      : <%= @himalaya.fecha %></p> <p>
-Hora de la reserva      : <%= @himalaya.hora %></p> <p>
-Email de la clientes      : <%= @himalaya.email %></p> <p>
+Hora de la reserva       : <%= @himalaya.hora %></p> <p>
 Núm. comensales          : <%= @himalaya.persona %></p><p>
 Dirección: Calle Caspe, 150, Barcelona (Barcelona) | <%= link_to("ver mapa"  ,"http://goo.gl/Rrdbyy") %></p><p>
 Cómo llegar: Metro L1 Arc de Triomf y L2 Tetuán</p><p>
  Teléfono del restaurante: 931805614</p><p>
+ Bebida y Menús no incluidos. Aplicable si consumes como mínimo un primero y un segundo o un segundo y un postre por comensal. Todos los días en comidas y cenas.
 
+<% else %>
+menu select              :<%= @himalaya.menu %></p> <p>
+Fecha de la reserva      : <%= @himalaya.fecha %></p> <p>
+Hora de la reserva      : <%= @himalaya.hora %></p> <p>
+Núm. comensales          : <%= @himalaya.persona %></p><p>
+Dirección: Calle Caspe, 150, Barcelona (Barcelona) | <%= link_to("ver mapa"  ,"http://goo.gl/Rrdbyy") %></p><p>
+Cómo llegar: Metro L1 Arc de Triomf y L2 Tetuán</p><p>
+ Teléfono del restaurante: 931805614</p><p>
+ <% end %>
 
              </p></td></tr></table></td>
       </tr><tr></tr></table></td></tr></table></body>

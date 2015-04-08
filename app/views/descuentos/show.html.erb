@@ -1,0 +1,46 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Persona:</b>
+  <%= @descuento.persona %>
+</p>
+
+<p>
+  <b>Hora:</b>
+  <%= @descuento.hora %>
+</p>
+
+<p>
+  <b>Menu:</b>
+  <%= @descuento.menu %>
+</p>
+
+<p>
+  <b>Fecha:</b>
+  <%= @descuento.fecha %>
+</p>
+
+
+<% if permitted_to? :edit,@descuento %>
+<p>
+  <b>Nombre:</b>
+  <%= @descuento.nombre %>
+</p>
+
+<p>
+  <b>Apellidos:</b>
+  <%= @descuento.apellidos %>
+</p>
+<p>
+  <b>Email:</b>
+  <%= @descuento.email %>
+</p>
+
+<p>
+  <b>Telefono:</b>
+  <%= @descuento.telefono %>
+</p>
+
+<%= link_to 'Edit', edit_descuento_path(@descuento) %> |
+<%= link_to 'Back', descuentos_path %>
+<%end %>

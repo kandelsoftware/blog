@@ -11,9 +11,15 @@
 // GO AFTER THE REQUIRES BELOW.
 //
 //= require jquery
-//= require rails.validations
 //= require jquery_ujs
+//= require rails.validations
 //= require jquery.ui.datepicker
 //= require jquery.ui.datepicker-es
-//= require owl.carousel
+//= require rhinoslider-1.05.min
+//= require slider
+
 //= require_tree .
+
+
+
+

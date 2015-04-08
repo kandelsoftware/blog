@@ -1,0 +1,6 @@
+comida india         3600
+restaurante hindu     590
+
+restaurante indio     590
+comida hindú           590
+restaurante indio barcelona

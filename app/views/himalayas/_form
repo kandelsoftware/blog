@@ -1,0 +1,67 @@
+
+ <%= form_for @himalaya, :validate => true do |f| %>
+<h6 >Reserva tu mesa</h6>
+  <% if @himalaya.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@himalaya.errors.count, "error") %> prohibited this himalaya from being saved:</h2>
+      <ul>
+      <% @himalaya.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+      <div class="field">
+           <%=f.select :persona,[ ["Selecciona Persona(s)"," " ],
+           ["1 persona","1" ],  ["2 personas", "2"], ["3 personas", "3"], ["4 personas", "4"], ["5 personas", "5"], ["6 personas", "6"], ["7 personas", "7"],  ["8 personas", "8"], ["9 personas", "9"], ["10 personas", "10"],["11 personas", "11"], ["12 personas", "12"]]%>
+      </div>
+      <div class="field">
+           <%=f.select :hora,[ ["selecciona hora reserva","" ],   ["1:00","1:00" ],  ["1:30", "1:30"], ["2:00", "2:00"], ["2:30", "2:30"], ["3:00", "3:00"], ["3:30", "3:30"], ["4:00", "4:00"],  ["20:00", "20:00"], ["20:30", "20:30"], ["21:00", "21:00"],["21:30", "21:30"], ["22:00", "22:00"], ["22:30", "22:30"],["23:00", "23:00"],["23:30", "23:30"]#, ["24:00", "24:00"]
+                    ]%>
+      </div>
+    <div class="field">
+            <%=f.select :menu,[ ["selecciona de menu","" ],   ["Carta","Carta" ],["Menu Degustion 60% descuentos ", "Menu Degustion"]#, ["24:00", "24:00"]
+             ] %>
+      </div>
+     <div class="fecha">
+   <%= f.text_field :fecha, id: 'himalaya' %>
+    </div>
+
+ <div id="himalaya_datepicker">
+  </div>
+<div class="error">
+  <div class="field">
+    <table>
+    <tr>
+       <th><%= f.label :nombre %></th>
+       <th> <%= f.label :apellidos %></th>
+    </tr>
+      <tr>
+    <th> <%= f.text_field :nombre %></th>
+    <th><%= f.text_field :apellidos %></th>
+    </tr>
+    </table>
+  </div>
+   <div class="field">
+    <th>
+   <p> <%= f.label :email %><br />
+    <%= f.text_field :email %>
+    </th>
+  </div>
+  <div class="field">
+    <%= f.label :telefono %></br>
+    <%= f.text_field :telefono %><p>
+  </div>
+</div>
+  <div class="actions">
+    <%= f.submit("Reserva ") %><p>
+</div>
+<% end %>
+
+
+<div class="facebook">
+<iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2FRestauranteHimalaya&amp;width=250&amp;height=290&amp;colorscheme=light&amp;show_faces=true&amp;header=false&amp;stream=false&amp;show_border=true&amp;appId=288053107882273" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+
+
+</div>

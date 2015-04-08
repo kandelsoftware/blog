@@ -20,11 +20,12 @@
   <%= @himalaya.fecha %>
 </p>
 
+
+<% if permitted_to? :edit,@himalaya %>
 <p>
   <b>Nombre:</b>
   <%= @himalaya.nombre %>
 </p>
-
 <p>
   <b>Email:</b>
   <%= @himalaya.email %>
@@ -35,7 +36,6 @@
   <%= @himalaya.telefono %>
 </p>
 
-    <% if permitted_to? :edit,@himalaya %>
 
 <%= link_to 'Edit', edit_himalaya_path(@himalaya) %> |
                  <% end %>

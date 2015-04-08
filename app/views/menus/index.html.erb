@@ -1,16 +1,12 @@
- <div class= "form ">
+<title><% title"Restaurante-hindú-barcelona" %></title>
 
- <%= render :partial=>'himalayas/form' %>
- </div>
 
 <div class= "menus">
-
 <% @menus.each do |menu| %>
 <div class= "foods">
 
-                 <%= link_to menu.name, menu_comidas_path(menu) %>
-  <%=link_to (image_tag"#{(menu.image) }.jpg",size: '150x150'),menu_comidas_path(menu)%>
-
+     <br>  <%= link_to menu.name, menu_comidas_path(menu) %></br>
+  <%=link_to (image_tag"#{(menu.image) }.jpg"),menu_comidas_path(menu)%>
 
 
                   <% if permitted_to? :edit,menu %>
@@ -23,7 +19,10 @@
 </div>
 
 <% end %>
-</div>
 
+</div>
+<div class= "form ">
+<%= render :partial=>'himalayas/form' %>
+</div>
 
 

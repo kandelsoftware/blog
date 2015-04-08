@@ -1,0 +1,389 @@
+
+body {
+background: #FFF url(bg-repeat.jpeg) repeat top center;
+  height:100%;
+  font: 400 1.25em/1.38 Philosopher;
+  margin:0px;
+  padding:0px;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  width: 100%;
+  height: 112px;
+  margin: 0 auto;
+  background-color:#6C7A89;
+}
+
+.nav a {
+  width: 6%;
+  min-height: 14px;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.38;
+  color: white;
+  text-decoration: none;
+}
+
+
+
+.nav .logo {
+  position: fixed;
+  top: 35px;
+  left: 10%;
+  z-index: 2;
+  font-size: 2.5em;
+}
+
+.wrapper{
+  height: 500px;
+
+  }
+
+
+.himalaya-description {
+  position: relative;
+  left: 5%;
+  width: 64%;
+  font-size: 1em;
+  color: black;
+  text-align: justify;
+}
+
+.field_with_errors {
+  margin-left: 20px;
+  display: inline;
+  position: relative;
+  right: 20px;
+}
+
+.field_with_errors label.message {
+  margin-left: 25px;
+  padding-left: 15px;
+  font-size:18px;
+  color: #ff5c20;
+   font-weight: normal;
+  font-style: normal;
+}
+
+
+.home {
+  position: fixed;
+  top: 77px;
+  left: 37.19921875%;
+  z-index: 3;
+}
+
+.carta {
+  position: fixed;
+  top: 77px;
+  left: 49.19921875%;
+  z-index: 4;
+}
+
+.offerta {
+  position: fixed;
+  top: 77px;
+  left: 60.56640625%;
+  z-index: 5;
+}
+
+.localization {
+  position: fixed;
+  top: 77px;
+  left: 73.80078125%;
+  z-index: 6;
+}
+
+.main{
+  position: relative;
+  float: left;
+  z-index: 0;
+  width: 88%;
+  height: auto;
+  margin: 105px 0 0 5.75%;
+}
+/*=========== change in code fixed ======*/
+
+.form {
+   position: fixed;
+    top: 105px;
+    right:3%;
+    width: 26.5%;
+    z-index: 3;
+    overflow: auto;
+    height: 87%;
+
+   }
+
+.reserva_mesa {
+  color: #ed5b1e;
+  letter-spacing: 3px;
+  font: 400 1.25em/1.38 Philosopher;
+  margin-left: 1em;
+  color: #ed5b1e;
+}
+
+#emailnotice {
+
+  top: 10px;
+  background-color: #2BAA9C;
+  font-size: 22px;
+  color: #ffec42;
+  text-align: center;
+}
+
+select {
+  width: 16.75em;
+  text-indent: 10px;
+  margin-top: 5px;
+  text-transform: capitalize;
+  font: .80em Philosopher;
+}
+
+
+input {
+  width: 17.5em;
+  font-size: 15px;
+
+}
+
+
+#himalaya_datepicker {
+  font-size: 0.70em;
+}
+
+.actions{
+  text-align: center;
+}
+
+/* My Comment */
+
+.actions input{
+ text-align: center;
+  color: #1b5729;
+  font-size: 25px;
+  width: 7em;
+}
+
+.foods {
+
+  float: left;
+  width: 25%;
+  margin: 50px;
+  margin-top: 0px;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 20px;
+}
+
+
+
+
+
+
+
+none {
+  /*background-color: #dfdfdf; */
+  font: 400 1.25em/1.38 Philosopher;
+  color: white;
+  background-color: white;
+
+}
+
+
+
+
+
+
+/*=========== start of footer ======*/
+
+
+
+.footer {
+  clear:both;
+  font-size: 18px;
+  text-align: center;
+  width: 100%;
+  height: 112px;
+  margin: 0;
+  background-color:#6C7A89;
+
+}
+
+/*=========== menu-degustacion  ======*/
+
+.menu-degustacion {
+  float: left;
+  width: 100%;
+  margin-left: 5px;
+}
+
+
+.discount {
+  color: #f83b1b;
+  font-weight: normal;
+  font-size: 35px;
+}
+
+/*=========== change in code fixed ======*/
+
+.image img {
+  position: fixed;
+  left: 40px;
+  margin: 50px;
+    width: 350px;
+    height: 350px;
+    opacity: 0.10;
+  }
+
+
+span.menu {
+  color: #f83b1b;
+  font-weight: normal;
+  font-size: 35px;
+  text-decoration: underline;
+}
+
+
+span.antes {
+  color: #d8d7d9;
+  font-size: 25px;
+  text-decoration: line-through;
+}
+
+
+span.ahora {
+  color: #080808;
+}
+
+
+.letter {
+  float: left;
+  margin-left:10px;
+  top: 0px;
+  width: 400px;
+  font-size: 15px;
+  text-align: center;
+}
+
+
+.letter p a {
+  top: 0px;
+  font-size: 20px;
+  color: #ff694c;
+  text-transform: capitalize;
+}
+
+/*=========== start of map ======*/
+
+.map {
+  float: left;
+  width: 45%;
+  height: 400px;
+  padding: 10px;
+  border-style: groove;
+  border-color: #fea138;
+}
+
+
+.map iframe {
+  width: 100% !important;
+  height: 100% !important;
+}
+/*=========== start of facebook ======*/
+
+.facebook {
+  margin-top: 5px;
+  margin-right: 1%;
+}
+
+.facebook iframe {
+  width: 25%;
+  height: 310px;
+  float: left;
+}
+
+
+
+
+
+
+
+/**
+ himalaya image slider
+   */
+
+
+
+.rhino-bullets {
+  position: absolute;
+  bottom: 0px;
+  left: 80%;
+
+  z-index: 10;
+}
+
+.rhino-bullets li {
+  float:left;
+  display:inline;
+  margin:0 2px;
+}
+ul#slider{
+  height: 550px;
+}
+.rhino-bullets li a.rhino-bullet {
+  display: block;
+  text-indent:-9999px;
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+  background: #838559 url(img/slider/bullet.jpg);
+  text-decoration:none;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  user-select:none;
+
+  border-radius:5px;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+}
+
+.rhino-bullets li a.rhino-bullet:hover, .rhino-bullets li a.rhino-bullet:focus {
+  background:#a8aa7c url(img/slider/bullet-hover.jpg);
+}
+
+.rhino-bullets li a.rhino-bullet.rhino-active-bullet {
+  background:#BA130D url(img/slider/bullet-hover.jpg);
+}
+
+/* Rhino slide */
+#page{
+  width: 850px;
+  height: 400px;
+}
+
+ol.rhino-bullets{
+  position: absolute;
+  top: 350px;
+
+}
+
+#slider img {
+  position: relative;
+  top: 5px;
+  left: 60px;
+  width: 700px;
+  height: 350px;
+  /*IE bugfix*/
+  padding: 0;
+  margin: 0;
+}
+
+
+#slider li { list-style:none; }
+
