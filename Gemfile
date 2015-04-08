@@ -11,7 +11,7 @@ group :development do
 gem 'sqlite3'
 end
 
-gem "placeholder-gem"
+#gem "placeholder-gem"
 #gem "fancy_select-rails", "~> 0.0.1"
 group :production do
 gem 'mysql2'
