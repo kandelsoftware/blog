@@ -6,7 +6,7 @@ filter_resource_access
   # GET /himalayas.json
   def index
 
-    @himalayas ||= Himalaya.limit(10).order('id desc')
+    @himalayas ||= Himalaya.all.order('id desc')
     @descuentos ||= Descuento.limit(10).order('id desc')
     respond_to do |format|
       format.html # index.html.erb
