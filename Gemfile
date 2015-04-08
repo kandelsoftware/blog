@@ -14,6 +14,8 @@ end
 
 group :production do
 gem 'mysql2'
+gem 'friendly_id'
+
 end
 
 #gem 'turbolinks'
