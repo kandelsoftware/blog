@@ -12,6 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require turbolinks
 //= require rails.validations
 //= require jquery.ui.datepicker
 //= require jquery.ui.datepicker-es

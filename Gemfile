@@ -14,10 +14,10 @@ end
 
 #gem 'friendly_id', '~>  4.0.0'
 group :production do
-	gem 'sqlite3'
+gem 'mysql2'
 end
 
-#gem 'turbolinks'
+gem 'turbolinks'
 
 
 # Gems used only for assets and not required
