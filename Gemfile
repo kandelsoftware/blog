@@ -11,7 +11,8 @@ group :development do
 gem 'sqlite3'
 end
 
-
+gem "placeholder-gem"
+#gem "fancy_select-rails", "~> 0.0.1"
 group :production do
 gem 'mysql2'
 end
@@ -39,7 +40,7 @@ gem 'declarative_authorization'
 gem 'devise'
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
-#gem 'friendly_id','~> 4.0.10.1'
+gem 'friendly_id','~> 4.0.10.1'
 
 #gem 'owlcarousel-rails'
 # To use ActiveModel has_secure_password

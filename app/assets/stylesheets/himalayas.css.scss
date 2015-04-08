@@ -186,26 +186,14 @@ select {
   select {
     background: none;
     padding: 5px; } }
+
 input {
   width: 12em;
   font-size: 15px; }
 
-input::-webkit-input-placeholder {
-  color: rgba(149, 165, 166, 0.9);
-  text-transform: capitalize; }
 
-input:-moz-placeholder {
-  /* Mozilla Firefox 4 to 18 */
-  color: #909; }
 
-input::-moz-placeholder {
-  /* Mozilla Firefox 19+ */
-  color: #909;
-  opacity: 0; }
 
-input:-ms-input-placeholder {
-  /* Internet Explorer 10+ */
-  color: #909; }
 
 #himalaya_datepicker {
   font-size: 0.64em; }

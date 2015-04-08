@@ -51,24 +51,4 @@ jQuery  ->
         $(n).addClass 'nav-open'
       return
     return
-
-
-    $('[placeholder]').focus(->
-      input = $(this)
-      if input.val() == input.attr('placeholder')
-        input.val ''
-        input.removeClass 'placeholder'
-      return
-    ).blur(->
-      input = $(this)
-      if input.val() == '' or input.val() == input.attr('placeholder')
-        input.addClass 'placeholder'
-        input.val input.attr('placeholder')
-      return
-    ).blur().parents('form').submit ->
-      $(this).find('[placeholder]').each ->
-        input = $(this)
-        if input.val() == input.attr('placeholder')
-          input.val ''
-        return
-      return
+    $('.basic').fancySelect();

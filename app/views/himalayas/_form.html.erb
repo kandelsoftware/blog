@@ -3,8 +3,8 @@
       <%= form_for @himalaya, :validate => true do |f| %>
 
       <div class="field">
-           <%=f.select :persona,[ ["Selecciona Persona(s)"," " ],
-           ["1 persona","1" ],  ["2 personas", "2"], ["3 personas", "3"], ["4 personas", "4"], ["5 personas", "5"], ["6 personas", "6"], ["7 personas", "7"],  ["8 personas", "8"], ["9 personas", "9"], ["10 personas", "10"],["11 personas", "11"], ["12 personas", "12"]]%>
+           <%=f.select(:persona,[ ["Selecciona Persona(s)"," " ],
+           ["1 persona","1" ],  ["2 personas", "2"], ["3 personas", "3"], ["4 personas", "4"], ["5 personas", "5"], ["6 personas", "6"], ["7 personas", "7"],  ["8 personas", "8"], ["9 personas", "9"], ["10 personas", "10"],["11 personas", "11"], ["12 personas", "12"]],{}, { :class => 'basic' })%>
       </div>
 
 
