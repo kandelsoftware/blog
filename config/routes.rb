@@ -21,9 +21,12 @@ Restaurant::Application.routes.draw do
   #resources :himalayas,path:"",except:[:index,:new,:create]
 
 
-
-resources :menus
+ #resources :menus,path: '/restaurante-hindu-barcelona' do
+#resources :comidas,path: '/comida-india'
+#end
+resources :menus do
 resources :comidas
+end
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
