@@ -14,8 +14,6 @@ end
 
 group :production do
 gem 'mysql2'
-gem 'friendly_id'
-
 end
 
 #gem 'turbolinks'
@@ -41,7 +39,7 @@ gem 'declarative_authorization'
 gem 'devise'
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
-gem 'friendly_id'
+gem 'friendly_id','~> 4.0.10.1'
 
 #gem 'owlcarousel-rails'
 # To use ActiveModel has_secure_password
