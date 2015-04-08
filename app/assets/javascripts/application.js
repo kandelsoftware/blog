@@ -17,7 +17,6 @@
 //= require jquery.ui.datepicker-es
 //= require rhinoslider-1.05.min
 //= require slider
-//= require turbolinks
 //= require_tree .
 
 

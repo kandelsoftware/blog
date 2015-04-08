@@ -12,12 +12,12 @@ gem 'sqlite3'
 end
 
 
-#gem 'friendly_id', '~>  4.0.0'
+gem 'friendly_id', '~>  4.0.0'
 group :production do
 gem 'mysql2'
 end
 
-gem 'turbolinks'
+#gem 'turbolinks'
 
 
 # Gems used only for assets and not required
@@ -39,7 +39,7 @@ gem 'declarative_authorization'
 gem 'devise'
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
-gem 'friendly_id','~> 4.0.10.1'
+#gem 'friendly_id','~> 4.0.10.1'
 
 #gem 'owlcarousel-rails'
 # To use ActiveModel has_secure_password
