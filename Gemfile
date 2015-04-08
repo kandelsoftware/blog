@@ -33,6 +33,7 @@ group :assets do
 
 end
  gem 'client_side_validations'
+ gem "better_errors"
 
   gem 'uglifier', '>= 1.0.3'
 gem 'declarative_authorization'

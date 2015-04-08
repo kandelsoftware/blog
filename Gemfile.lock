@@ -31,6 +31,10 @@ GEM
       multi_json (~> 1.0)
     arel (3.0.3)
     bcrypt (3.1.7)
+    better_errors (2.1.1)
+      coderay (>= 1.0.0)
+      erubis (>= 2.6.6)
+      rack (>= 0.9.0)
     builder (3.0.4)
     capistrano (2.15.5)
       highline
@@ -39,6 +43,7 @@ GEM
       net-ssh (>= 2.0.14)
       net-ssh-gateway (>= 1.1.0)
     client_side_validations (3.2.6)
+    coderay (1.1.0)
     coffee-rails (3.2.2)
       coffee-script (>= 2.2.0)
       railties (~> 3.2.0)
@@ -137,6 +142,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  better_errors
   capistrano (~> 2.15.5)
   client_side_validations
   coffee-rails (~> 3.2.1)
