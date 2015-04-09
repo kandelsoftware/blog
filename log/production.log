@@ -184,3 +184,47 @@ Compiled application.css  (554ms)  (pid 52187)
 Compiled exitpops.js  (472ms)  (pid 52187)
 Compiled extra css/wwhimalayas.css.scss   (0ms)  (pid 52187)
 Compiled himalayas.js  (272ms)  (pid 52187)
+Connecting to database specified by database.yml
+Started GET "/" for 127.0.0.1 at 2015-04-09 16:03:52 +0200
+Processing by HimalayasController#new as HTML
+  Rendered himalayas/_form.html.erb (97.3ms)
+  Rendered himalayas/new.html.erb within layouts/application (115.1ms)
+  Rendered layouts/_nav.html.erb (2.4ms)
+Completed 200 OK in 243.3ms (Views: 187.0ms | ActiveRecord: 11.0ms)
+Started GET "/assets/arrow.png" for 127.0.0.1 at 2015-04-09 16:03:52 +0200
+Served asset /arrow.png - 404 Not Found (6ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/arrow.png"):
+  actionpack (3.2.18) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.18) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.18) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.18) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.18) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.18) lib/action_dispatch/middleware/static.rb:63:in `call'
+  rack-cache (1.2) lib/rack/cache/context.rb:136:in `forward'
+  rack-cache (1.2) lib/rack/cache/context.rb:245:in `fetch'
+  rack-cache (1.2) lib/rack/cache/context.rb:185:in `lookup'
+  rack-cache (1.2) lib/rack/cache/context.rb:66:in `call!'
+  rack-cache (1.2) lib/rack/cache/context.rb:51:in `call'
+  railties (3.2.18) lib/rails/engine.rb:484:in `call'
+  railties (3.2.18) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.18) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /Users/saroj/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/saroj/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/saroj/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-09 16:03:55 +0200
+Processing by HimalayasController#new as HTML
+  Rendered himalayas/_form.html.erb (15.8ms)
+  Rendered himalayas/new.html.erb within layouts/application (16.9ms)
+  Rendered layouts/_nav.html.erb (1.1ms)
+Completed 200 OK in 23.8ms (Views: 21.0ms | ActiveRecord: 0.0ms)
