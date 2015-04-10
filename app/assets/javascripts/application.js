@@ -15,13 +15,10 @@
 //= require rails.validations
 //= require jquery.ui.datepicker
 //= require jquery.ui.datepicker-es
-//= require rhinoslider-1.05.min
-//= require slider
-//= require turbolinks
+//= require rhinoslider-1.05.min.js
 //= require placeholder
+//= require slider
 //= require_tree .
-
-
 
 
 
