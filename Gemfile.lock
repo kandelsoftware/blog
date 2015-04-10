@@ -73,6 +73,7 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.25.1)
     multi_json (1.10.1)
+    mysql2 (0.3.18)
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
     net-sftp (2.1.2)
@@ -125,6 +126,8 @@ GEM
     treetop (1.4.15)
       polyglot
       polyglot (>= 0.3.1)
+    turbolinks (2.5.3)
+      coffee-rails
     tzinfo (0.3.39)
     uglifier (2.5.1)
       execjs (>= 0.3.0)
@@ -149,8 +152,10 @@ DEPENDENCIES
   i18n (= 0.6.4)
   jquery-rails
   jquery-ui-rails
+  mysql2
   rails (= 3.2.18)
   sass-rails (~> 3.2.3)
   sqlite3
+  turbolinks
   uglifier (>= 1.0.3)
   unicorn
