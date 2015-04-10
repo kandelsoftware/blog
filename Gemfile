@@ -54,6 +54,7 @@ gem "placeholder-gem"
  gem 'unicorn'
 gem "i18n", "0.6.4"
 # Deploy with Capistrano
+gem 'bcrypt', '~> 3.1.7'
 gem 'capistrano', '~> 2.15.5'
 # To use debugger
 # gem 'debugger'

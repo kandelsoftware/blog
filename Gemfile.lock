@@ -145,6 +145,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bcrypt (~> 3.1.7)
   capistrano (~> 2.15.5)
   client_side_validations
   coffee-rails (~> 3.2.1)

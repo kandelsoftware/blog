@@ -228,3 +228,4 @@ Processing by HimalayasController#new as HTML
   Rendered himalayas/new.html.erb within layouts/application (16.9ms)
   Rendered layouts/_nav.html.erb (1.1ms)
 Completed 200 OK in 23.8ms (Views: 21.0ms | ActiveRecord: 0.0ms)
+Connecting to database specified by database.yml
