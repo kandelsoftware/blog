@@ -45,6 +45,7 @@ gem 'turbolinks'
 gem "placeholder-gem"
 #gem 'owlcarousel-rails'
 # To use ActiveModel has_secure_password
+gem 'bcrypt', '~> 3.1.10'
  gem 'bcrypt-ruby', '~> 3.0.0'
 
 # To use Jbuilder templates for JSON
@@ -54,7 +55,6 @@ gem "placeholder-gem"
  gem 'unicorn'
 gem "i18n", "0.6.4"
 # Deploy with Capistrano
-gem 'bcrypt', '~> 3.1.7'
 gem 'capistrano', '~> 2.15.5'
 # To use debugger
 # gem 'debugger'
