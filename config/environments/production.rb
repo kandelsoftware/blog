@@ -65,10 +65,10 @@ config.action_mailer.default_url_options = { :host => 'himalayarestaurant.es' }
 
   }
   # Add the fonts path
-  config.assets.paths << Rails.root.join('app', 'assets', 'fonts')
+  #config.assets.paths << Rails.root.join('app', 'assets', 'fonts')
 
   # Precompile additional assets
-  config.assets.precompile += %w( .svg .eot .woff .ttf )
+  #config.assets.precompile += %w( .svg .eot .woff .ttf )
   # Don't care if the mailer can't send
   config.action_mailer.raise_delivery_errors = true
   # Enable threaded mode

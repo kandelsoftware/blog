@@ -51,4 +51,3 @@ jQuery  ->
         $(n).addClass 'nav-open'
       return
     return
-    $('.basic').fancySelect();
