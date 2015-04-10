@@ -3,20 +3,23 @@
       <%= form_for @himalaya, :validate => true do |f| %>
 
       <div class="field">
-           <%=f.select(:persona,[ ["Selecciona Persona(s)"," " ],
+        <%= f.label :personas , "Selecciona Persona(s)"%><br />
+           <%=f.select(:persona,[ ["2 Personas","2 " ],
            ["1 persona","1" ],  ["2 personas", "2"], ["3 personas", "3"], ["4 personas", "4"], ["5 personas", "5"], ["6 personas", "6"], ["7 personas", "7"],  ["8 personas", "8"], ["9 personas", "9"], ["10 personas", "10"],["11 personas", "11"], ["12 personas", "12"]],{}, { :class => 'basic' })%>
       </div>
 
 
       <div class="field">
-      <%=f.select :hora,[ ["selecciona hora de reserva","" ],   ["Comida","" ],["1:00","1:00" ],  ["1:30", "1:30"],   ["2:00", "2:00"], ["2:30", "2:30"], ["3:00", "3:00"], ["3:30", "3:30"], ["4:00", "4:00"], ["Cena","" ],  ["20:00", "20:00"], ["20:30", "20:30"], ["21:00", "21:00"],["21:30", "21:30"], ["22:00", "22:00"], ["22:30", "22:30"],["23:00", "23:00"],["23:30", "23:30"]#, ["24:00", "24:00"]
+      <%= f.label :hora , "Selecciona hora de reserva"%><br />
+      <%=f.select :hora,[["Comida","" ],["1:00","1:00" ],  ["1:30", "1:30"],   ["2:00", "2:00"], ["2:30", "2:30"], ["3:00", "3:00"], ["3:30", "3:30"], ["4:00", "4:00"], ["Cena","" ],  ["20:00", "20:00"], ["20:30", "20:30"], ["21:00", "21:00"],["21:30", "21:30"], ["22:00", "22:00"], ["22:30", "22:30"],["23:00", "23:00"],["23:30", "23:30"]#, ["24:00", "24:00"]
                     ]%>
       </div>
 
       <%if session[:utm_source] %>
 
              <div class="field">
-                     <%=f.select :menu,[ ["selecciona de menu","" ],   ["Carta 40% Descuntos","Carta 40%" ],["Menu Degustion 18€", "Menu Degustion  18€"], ["Menu Degustion 20€", "Menu Degustion 20€"]
+              <%= f.label :hora , "Selecciona hora de reserva"%><br />
+                     <%=f.select :menu,[ ["Carta 40% Descuntos","Carta 40%" ],["Menu Degustion 18€", "Menu Degustion  18€"], ["Menu Degustion 20€", "Menu Degustion 20€"]
                       ] %>
                </div>
 
@@ -25,7 +28,8 @@
       <%else %>
 
       <div class="field">
-              <%=f.select :menu,[ ["selecciona de menu","" ],   ["Carta","Carta" ],["Menu Degustion  ", "Menu Degustion 18 €"],  ["Menu Degustion 20", "Menu Degustion 20€"]
+        <%= f.label :menu , "Selecciona de menu"%><br />
+              <%=f.select :menu,[["Carta","Carta" ],["Menu Degustion  ", "Menu Degustion 18 €"],  ["Menu Degustion 20", "Menu Degustion 20€"]
                ] %>
         </div>
       <%end%>

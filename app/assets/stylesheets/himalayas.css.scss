@@ -47,7 +47,7 @@ a {
   float: left;
   list-style: none; }
 
-.nav-list li a {
+.nav-list li a{
   display: block;
   padding: 20px 10px;
   color: #f9f9f9; }
@@ -88,7 +88,7 @@ a {
   right: 20px; }
 
 .field_with_errors label.message {
-  margin-left: 25px;
+  float: left;
   padding-left: 15px;
   font-size: 18px;
   color: #ff5c20;
@@ -148,19 +148,20 @@ a {
   color: #ffec42;
   text-align: center; }
 
-select {
-  margin: 50px;
-  border: 1px solid #111;
-  background: transparent;
-  width: 12.3em;
-  padding: 5px 35px 5px 5px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  height: 36px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background: url(arrow.png) 96%/15% no-repeat #eeeeee; }
+  select {
+    margin: 50px;
+    border: 1px solid #111;
+    background: transparent;
+    width: 12.3em;
+    padding: 5px 35px 5px 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    height: 36px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: url(arrow.png) 96%/15% no-repeat ;
+    background-color: white;
+  }
 
 /*target Internet Explorer 9 and Internet Explorer 10:
 select {
