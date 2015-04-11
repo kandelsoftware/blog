@@ -81,20 +81,21 @@ a {
   color: black;
   text-align: justify; }
 
-.field_with_errors {
-  margin-left: 20px;
-  display: inline;
-  position: relative;
-  right: 20px; }
+  .field_with_errors {
+    margin-left: 20px;
+    display: inline;
+    position: relative;
+    right: 20px;
+  }
 
-.field_with_errors label.message {
-  float: left;
-  padding-left: 15px;
-  font-size: 18px;
-  color: #ff5c20;
-  font-weight: normal;
-  font-style: normal; }
-
+  .field_with_errors label.message {
+    padding-left: 15px;
+    margin-left: 50px;
+    font-size: 18px;
+    color: #ff5c20;
+    font-weight: normal;
+    font-style: normal;
+  }
 .home {
   position: fixed;
   top: 77px;
@@ -158,10 +159,16 @@ a {
     border: 1px solid #ccc;
     height: 36px;
     -webkit-appearance: none;
-    -moz-appearance: none;
+    appearance:none;
+    text-indent: 1px;
+    text-overflow: '';
     background: url(arrow.png) 96%/15% no-repeat ;
     background-color: white;
   }
+  select::-ms-expand {
+      display: none;
+  }
+
 
 /*target Internet Explorer 9 and Internet Explorer 10:
 select {
