@@ -1,3 +1,5 @@
+/* @override http://localhost:3000/assets/himalayas.css?body=1 */
+
 
 body {
     background: #EEE;
@@ -102,10 +104,8 @@ overflow: hidden;
 
 
 .field_with_errors {
-  margin-left: 20px;
   display: inline;
-  position: relative;
-  right: 20px;
+
 }
 
 .field_with_errors label.message {
@@ -166,6 +166,7 @@ overflow: hidden;
 /*=========== change in code fixed ======*/
 
 .form {
+width: 26%;
 margin-top:2%;
 float: right;
 top: 0px;
@@ -263,14 +264,14 @@ input {
 
 
 .menus {
-  width: 800px;
+  width: 90%;
 }
 
 
 .foods {
   float: left;
-  width: 25%;
-  margin: 30px;
+  width: 23%;
+  margin: 1%;
   margin-top: 0px;
   text-align: center;
   text-transform: capitalize;
@@ -525,6 +526,7 @@ height: 20em;
   /*=========== change in code fixed ======*/
 
   .form {
+  width: 30%;
    float: right;
    top: 0px;
     z-index: 3;
@@ -552,13 +554,13 @@ height: 20em;
   /* My Comment */
 
   .menus {
-    width: 800px;
+    width:80%;
   }
 
 
   .foods {
     float: left;
-    width: 39%;
+    width: 35%;
     margin: 20px;
     margin-right: 5px;
     margin-top: 0px;
@@ -693,6 +695,7 @@ height: 20em;
   /*=========== change in code fixed ======*/
 
   .form {
+    width: 32%;
     top: 0px;
     z-index: 3;
   }
@@ -716,26 +719,27 @@ height: 20em;
 
   /* My Comment */
 
-  .menus {
-    width: 600px;
-  }
+
+.menus {
+  width: 70%;
+}
 
 
-  .foods {
-    float: left;
-    width: 39%;
-    margin: 5px;
-    margin-right: 5px;
-    margin-top: 0px;
-    text-align: center;
-    text-transform: capitalize;
-    font-size: 20px;
-  }
+.foods {
+  float: left;
+  width: 45%;
+  margin: 1%;
+  margin-top: 0px;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 20px;
+}
 
 
-  .foods a img {
-    width: 11em;
-  }
+.foods a img {
+  width: 11em;
+  height: 10em;
+}
 
   /*=========== start of footer ======*/
 
@@ -901,26 +905,26 @@ overflow: hidden;
 }
   /* My Comment */
 
-  .menus {
-    width: 600px;
-  }
+.menus {
+  width: 55%;
+}
 
 
-  .foods {
-    float: left;
-    width: 39%;
-    margin: 5px;
-    margin-right: 5px;
-    margin-top: 0px;
-    text-align: center;
-    text-transform: capitalize;
-    font-size: 20px;
-  }
+.foods {
+  float: left;
+  width: 46%;
+  margin: 2%;
+  margin-top: 0px;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 20px;
+}
 
 
-  .foods a img {
-    width: 11em;
-  }
+.foods a img {
+  width: 9em;
+  height: 9em;
+}
 
   /*=========== start of footer ======*/
 
