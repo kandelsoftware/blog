@@ -320,8 +320,7 @@ none {
 .menu-style {
   float: left;
   background-color: #cfbe46;
-  margin-left: 40px;
-  top: 0px;
+  margin-top: 3%;
   width: 60%;
   font-size: 15px;
   text-align: center;
@@ -341,6 +340,8 @@ none {
 
 .map {
   float: left;
+  margin-top:3%;
+
   width: 60%;
   height: 500px;
   padding: 10px;
@@ -954,9 +955,7 @@ overflow: hidden;
   .menu-style {
     float: left;
     background-color: #cfbe46;
-    margin-left: 1px;
-    top: 0px;
-    width: 60%;
+    width: 55%;
     font-size: 10px;
     text-align: center;
     border-style: groove;
@@ -975,11 +974,9 @@ overflow: hidden;
 
   .map {
     float: left;
-    width: 59%;
+    width: 50%;
     height: 450px;
-    padding: 10px;
-    border-style: groove;
-    border-color: yellow;
+
   }
 
   /*=========== start of facebook ======*/
@@ -1198,9 +1195,8 @@ overflow: hidden;
   .menu-style {
     float: left;
     background-color: #cfbe46;
-    margin-left: 2px;
     top: 0px;
-    width: 90%;
+    width: 100%;
     font-size: 10px;
     text-align: center;
     border-style: groove;
