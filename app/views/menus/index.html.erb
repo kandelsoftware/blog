@@ -1,6 +1,8 @@
 <title><% title"Restaurante-hindú-barcelona" %></title>
 
-
+<div class= "form ">
+<%= render :partial=>'himalayas/form' %>
+</div>
 <div class= "menus">
 <% @menus.each do |menu| %>
 <div class= "foods">
@@ -21,8 +23,6 @@
 <% end %>
 
 </div>
-<div class= "form ">
-<%= render :partial=>'himalayas/form' %>
-</div>
+
 
 

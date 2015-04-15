@@ -1,8 +1,7 @@
-
 body {
     background: #EEE;
   height: 100%;
-  font-family:Arial, Helvetica, sans-serif;
+  font-family: dhruba,Arial, Helvetica, sans-serif;
   font: 400 1.25em/1.38 'saroj';
   margin: 0px;
   padding: 0px;
@@ -24,14 +23,14 @@ a {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 999;
+  z-index: 1;
   width: 100%;
   margin: 0 auto;
   background-color: #6C7A89;
 }
 
 .nav-hold {
-overflow: hidden;
+  overflow: hidden;
 }
 
 .menus {
@@ -88,16 +87,17 @@ overflow: hidden;
 }
 
 .himalaya-description {
-  width: 66%;
   float: left;
+  width: 670px;
   font-size: 1em;
   background-color: white;
   color: black;
   text-align: justify;
+  margin-left: 4.5%;
   padding: 20px;
-  margin-top: 1%;
   margin-bottom: 20px;
-  border: 4px solid w;
+  border: 4px solid #c0c0c0;
+  opacity: 0.82;
 }
 
 
@@ -143,11 +143,7 @@ overflow: hidden;
   float: right;
   margin-right: 40px;
 }
-.spacer
-{
-    width: 100%;
-    height: 100px;
-}
+
 
 .open {
   float: right;
@@ -156,22 +152,24 @@ overflow: hidden;
 
 
 .main {
+  position: relative;
   z-index: 0;
-  width: 95%;
-  margin: auto;
-
+  width: 100%;
+  height: 600px;
+  margin-top: 115px;
+  margin-left: 3%;
 }
 
 
 /*=========== change in code fixed ======*/
 
 .form {
-margin-top:2%;
-float: right;
-top: 0px;
- z-index: 3;
- border: 4px solid white;
- background-color: white;
+  position: absolute;
+  top: 0px;
+  right: 3%;
+  width: 26.5%;
+  z-index: 3;
+  height: 82%;
 }
 
 
@@ -371,6 +369,25 @@ none {
  himalaya image slider
    */
 
+.rhino-bullets {
+  position: absolute;
+  bottom: 0px;
+  left: 45%;
+  z-index: 10;
+}
+
+
+.rhino-bullets li {
+  float: left;
+  display: inline;
+  margin: 0 2px;
+}
+
+
+ul#slider {
+  height: 550px;
+}
+
 
 .rhino-bullets li a.rhino-bullet {
   display: block;
@@ -398,58 +415,31 @@ none {
   background: #ba130d url(img/slider/bullet-hover.jpg);
 }
 
-
-
 /* Rhino slide */
 
-.rhino-bullets {
-  position: absolute;
-  left: 45%;
-  bottom: 0px;
-  z-index: 10;
+#page {
+  width: 800px;
+  height: 400px;
 }
 
 
-.rhino-bullets li {
-  float: left;
-  display: inline;
-  margin: 0 2px;
-}
 ol.rhino-bullets {
   position: absolute;
   height: 5px;
-  top: 93%;
-}
-
-#page {
-  width:70%;
-  height:21em;
-  float: left;
+  top: 350px;
 }
 
 
-ul#slider {
-width: 100%;
-height: 20em;
- border: 4px solid white;
-
-}
-
-#slider{
-  width:100%;
-  height: 20em;
-
-  /*IE bugfix*/
-  padding: 0;
-
-}
-#slider img{
-  width:100%;
-  height: 20em;
+#slider img {
+  position: relative;
+  top: 5px;
+  left: 60px;
+  width: 700px;
+  height: 350px;
+  border: 4px solid #c0c0c0;
   /*IE bugfix*/
   padding: 0;
   margin: 0;
-
 
 }
 
@@ -518,35 +508,38 @@ height: 20em;
   color: white;
 }
 
-
 @media (max-width: 1024px) and (min-width: 768px) {
 
+  .main {
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    height: 700px;
+    margin-top: 115px;
+    margin-left: 3%;
+  }
 
   /*=========== change in code fixed ======*/
 
   .form {
-   float: right;
-   top: 0px;
+    position: absolute;
+    top: 0px;
+    right: 2px;
+    width: 28%;
     z-index: 3;
+    height: 82%;
   }
 
 
   input {
     width: 11em;
     font-size: 15px;
-    color: white;
   }
 
   /*=========== change in code fixed ======*/
 
   .himalaya-description {
-    width: 63.5%;
-    font-size: 1em;
-    color: black;
-    text-align: justify;
-    padding: 20px;
-    margin-bottom: 20px;
-    border: 4px solid w;
+    display: none;
   }
 
   /* My Comment */
@@ -627,12 +620,10 @@ height: 20em;
 
   /*=========== start of facebook ======*/
 
-/* Rhino slide */
-
   .rhino-bullets {
     position: absolute;
-    left: 45%;
     bottom: 0px;
+    left: 40%;
     z-index: 10;
   }
 
@@ -642,59 +633,64 @@ height: 20em;
     display: inline;
     margin: 0 2px;
   }
-  ol.rhino-bullets {
-    position: absolute;
-    height: 5px;
-    top: 93%;
-  }
-
-  #page {
-    width:69%;
-    height:21em;
-    float: left;
-  }
 
 
   ul#slider {
-  width: 96%;
-  height: 19em;
-   border: 4px solid white;
-
+    margin: 0px;
+    padding: 0px;
+    height: 550px;
   }
 
-  #slider{
-    width:100%;
-    height: 20em;
+  /* Rhino slide */
 
-    /*IE bugfix*/
-    padding: 0;
-
+  #page {
+    width: 700px;
+    height: 600px;
   }
-  #slider img{
-    width:100%;
-    height: 19em;
 
+
+  ol.rhino-bullets {
+    position: absolute;
+    top: 400px;
+  }
+
+
+  #slider img {
+    position: relative;
+    top: 5px;
+    left: 5px;
+    width: 100%;
+    height: 400px;
     /*IE bugfix*/
     padding: 0;
     margin: 0;
-
-
   }
 
 
   #slider li {
     list-style: none;
   }
-
-
 }
-@media (max-width: 865px) {
+@media (max-width: 768px) {
+
+  .main {
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    height: 750px;
+    margin-top: 115px;
+    margin-left: 3%;
+  }
 
   /*=========== change in code fixed ======*/
 
   .form {
+    position: absolute;
     top: 0px;
+    margin-right: 5px;
+    width: 35%;
     z-index: 3;
+    height: 82%;
   }
 
 
@@ -704,15 +700,10 @@ height: 20em;
   }
 
   /*=========== change in code fixed ======*/
-.himalaya-description {
-  width: 60%;
-  font-size: 1em;
-  color: white;
-  text-align: justify;
-  padding: 20px;
-  margin-bottom: 20px;
-  border: 4px solid w;
-}
+
+  .himalaya-description {
+    display: none;
+  }
 
   /* My Comment */
 
@@ -795,257 +786,58 @@ height: 20em;
 
   /*=========== start of facebook ======*/
 
-
-
-  /* Rhino slide */
-  /* Rhino slide */
-
-    .rhino-bullets {
-      position: absolute;
-      left: 45%;
-      bottom: 0px;
-      z-index: 10;
-    }
-
-
-    .rhino-bullets li {
-      float: left;
-      display: inline;
-      margin: 0 2px;
-    }
-    ol.rhino-bullets {
-      position: absolute;
-      height: 5px;
-      top: 93%;
-    }
-
-    #page {
-      width:66%;
-      height:21em;
-    }
-
-
-    ul#slider {
-    width: 96%;
-    height: 19em;
-     border: 4px solid white;
-
-    }
-
-    #slider{
-      width:100%;
-      height: 20em;
-
-      /*IE bugfix*/
-      padding: 0;
-
-    }
-    #slider img{
-      width:100%;
-      height: 19em;
-
-      /*IE bugfix*/
-      padding: 0;
-      margin: 0;
-
-
-    }
-
-
-    #slider li {
-      list-style: none;
-    }
-
-
-
-
-}
-
-
-@media (max-width: 798px) {
-
-  /*=========== change in code fixed ======*/
-
-  .form {
-  width: 42%;
-    top: 0px;
-    z-index: 3;
+  .rhino-bullets {
+    position: absolute;
+    bottom: 0px;
+    left: 30%;
+    z-index: 10;
   }
 
 
-  input {
-    width: 11em;
-    font-size: 15px;
-  }
-
-  /*=========== change in code fixed ======*/
-.nav-hold {
-  width: 100%;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-
-.nav-hold {
-overflow: hidden;
-}
-.himalaya-description {
-  width: 50%;
-  margin-top: 15px;
-  font-size: 1em;
-  color: black;
-  text-align: justify;
-  padding: 20px;
-  margin-bottom: 20px;
-  border: 4px solid w;
-}
-  /* My Comment */
-
-  .menus {
-    width: 600px;
-  }
-
-
-  .foods {
+  .rhino-bullets li {
     float: left;
-    width: 39%;
-    margin: 5px;
-    margin-right: 5px;
-    margin-top: 0px;
-    text-align: center;
-    text-transform: capitalize;
-    font-size: 20px;
+    display: inline;
+    margin: 0 2px;
   }
 
 
-  .foods a img {
-    width: 11em;
+  ul#slider {
+    margin: 0px;
+    padding: 0px;
+    height: 550px;
   }
 
-  /*=========== start of footer ======*/
+  /* Rhino slide */
 
-  .footer {
-    clear: both;
-    font-size: 18px;
-    text-align: center;
-    width: 100%;
-    height: 112px;
+  #page {
+    width: 500px;
+    height: 600px;
+  }
+
+
+  ol.rhino-bullets {
+    position: absolute;
+    top: 400px;
+  }
+
+
+  #slider img {
+    position: relative;
+    top: 5px;
+    left: 0px;
+    width: 480px;
+    height: 400px;
+    /*IE bugfix*/
+    padding: 0;
     margin: 0;
-    color: white;
-    background-color: #6C7A89;
-  }
-
-  /*=========== menu-degustacion  ======*/
-
-  .menu-text {
-    color: purple;
-    font-weight: normal;
-    font-size: 20px;
-    width: 50%;
-    margin-left: 5px;
-  }
-
-  /*=========== change in code fixed ======*/
-
-  .menu-style {
-    float: left;
-    background-color: #cfbe46;
-    margin-left: 1px;
-    top: 0px;
-    width: 60%;
-    font-size: 10px;
-    text-align: center;
-    border-style: groove;
-    border-color: #0e0000;
   }
 
 
-  .menu-style p a {
-    top: 0px;
-    font-size: 20px;
-    color: #ff694c;
-    text-transform: capitalize;
+  #slider li {
+    list-style: none;
   }
-
-  /*=========== start of map ======*/
-
-  .map {
-    float: left;
-    width: 59%;
-    height: 450px;
-    padding: 10px;
-    border-style: groove;
-    border-color: yellow;
-  }
-
-  /*=========== start of facebook ======*/
-
-
-
-  /* Rhino slide */
-  /* Rhino slide */
-
-    .rhino-bullets {
-      position: absolute;
-      left: 45%;
-      bottom: 0px;
-      z-index: 10;
-    }
-
-
-    .rhino-bullets li {
-      float: left;
-      display: inline;
-      margin: 0 2px;
-    }
-    ol.rhino-bullets {
-      position: absolute;
-      height: 5px;
-      top: 93%;
-    }
-
-    #page {
-      width:56%;
-      height:20em;
-    }
-
-
-    ul#slider {
-    width: 100%;
-    height: 19em;
-     border: 4px solid white;
-
-    }
-
-    #slider{
-      width:100%;
-      height: 20em;
-
-      /*IE bugfix*/
-      padding: 0;
-
-    }
-    #slider img{
-      width:100%;
-      height: 19em;
-
-      /*IE bugfix*/
-      padding: 0;
-      margin: 0;
-
-
-    }
-
-
-    #slider li {
-      list-style: none;
-    }
-
-
-
-
 }
-@media screen and (max-width: 670px) {
+@media screen and (max-width: 500px) {
 
   .reserva_mesa {
     color: #ed5b1e;
@@ -1118,23 +910,24 @@ overflow: hidden;
   }
 
 
-
+  .main {
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    margin-top: 5px;
+    margin-left: 3%;
+  }
 
   /*=========== change in code fixed ======*/
-.main {
-  z-index: 0;
-  width: 90%;
-  margin: auto;
 
-}
   .form {
-   width: 96%;
+    position: relative;
     top: 0px;
+    margin-left: 40px;
+    width: 60%;
     z-index: 3;
-  top: 0px;
-   z-index: 3;
-    border-style: none;
-    background-color: #edeeed;
+    height: 61%;
   }
 
 
@@ -1224,68 +1017,52 @@ overflow: hidden;
 
   /*=========== start of facebook ======*/
 
+  .rhino-bullets {
+    position: absolute;
+    bottom: 0px;
+    left: 20%;
+    z-index: 10;
+  }
+
+
+  .rhino-bullets li {
+    float: left;
+    display: inline;
+    margin: 0 2px;
+  }
+
+
+  ul#slider {
+    margin: 0px;
+    padding: 0px;
+    height: 550px;
+  }
 
   /* Rhino slide */
 
+  #page {
+    width: 300px;
+    height: 280px;
+  }
 
 
-  /* Rhino slide */
-
-    .rhino-bullets {
-      position: absolute;
-      left: 45%;
-      bottom: 0px;
-      z-index: 10;
-    }
+  ol.rhino-bullets {
+    position: absolute;
+    top: 250px;
+  }
 
 
-    .rhino-bullets li {
-      float: left;
-      display: inline;
-      margin: 0 2px;
-    }
-    ol.rhino-bullets {
-      position: absolute;
-      height: 5px;
-      top: 93%;
-    }
-
-    #page {
-      width:100%;
-      height:21em;
-      float: none;
-    }
-
-
-    ul#slider {
+  #slider img {
+    left: 7px;
     width: 100%;
-    height: 19em;
-     border: 4px solid white;
-
-    }
-
-    #slider{
-      width:100%;
-      height: 20em;
-
-      /*IE bugfix*/
-      padding: 0;
-
-    }
-    #slider img{
-      width:100%;
-      height: 19em;
-
-      /*IE bugfix*/
-      padding: 0;
-      margin: 0;
+    height: 250px;
+    /*IE bugfix*/
+    padding: 0;
+    margin: 0;
+  }
 
 
-    }
-
-
-    #slider li {
-      list-style: none;
-    }
-
+  #slider li {
+    list-style: none;
+  }
 }

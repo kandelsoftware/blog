@@ -51,3 +51,20 @@ jQuery  ->
         $(n).addClass 'nav-open'
       return
     return
+    responsivecheck = (size) ->
+      compare = $('#wrap').width()
+      if size != compare
+        reload()
+      else
+        setTimeout (->
+          responsivecheck compare
+          return
+        ), 5000
+      return
+
+    # ! executed after rhinoslider initialization !
+
+    reload = ->
+      window.location.href = window.location.href
+      return
+
