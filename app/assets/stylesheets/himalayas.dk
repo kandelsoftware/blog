@@ -1,7 +1,10 @@
+/* @override http://localhost:3000/assets/himalayas.css?body=1 */
+
+
 body {
     background: #EEE;
   height: 100%;
-  font-family: dhruba,Arial, Helvetica, sans-serif;
+  font-family:Arial, Helvetica, sans-serif;
   font: 400 1.25em/1.38 'saroj';
   margin: 0px;
   padding: 0px;
@@ -23,14 +26,14 @@ a {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1;
+  z-index: 999;
   width: 100%;
   margin: 0 auto;
   background-color: #6C7A89;
 }
 
 .nav-hold {
-  overflow: hidden;
+overflow: hidden;
 }
 
 .menus {
@@ -87,25 +90,22 @@ a {
 }
 
 .himalaya-description {
+  width: 66%;
   float: left;
-  width: 670px;
   font-size: 1em;
   background-color: white;
   color: black;
   text-align: justify;
-  margin-left: 4.5%;
   padding: 20px;
+  margin-top: 1%;
   margin-bottom: 20px;
-  border: 4px solid #c0c0c0;
-  opacity: 0.82;
+  border: 4px solid w;
 }
 
 
 .field_with_errors {
-  margin-left: 20px;
   display: inline;
-  position: relative;
-  right: 20px;
+
 }
 
 .field_with_errors label.message {
@@ -143,7 +143,11 @@ a {
   float: right;
   margin-right: 40px;
 }
-
+.spacer
+{
+    width: 100%;
+    height: 100px;
+}
 
 .open {
   float: right;
@@ -152,24 +156,23 @@ a {
 
 
 .main {
-  position: relative;
   z-index: 0;
-  width: 100%;
-  height: 600px;
-  margin-top: 115px;
-  margin-left: 3%;
+  width: 95%;
+  margin: auto;
+
 }
 
 
 /*=========== change in code fixed ======*/
 
 .form {
-  position: absolute;
-  top: 0px;
-  right: 3%;
-  width: 26.5%;
-  z-index: 3;
-  height: 82%;
+width: 26%;
+margin-top:2%;
+float: right;
+top: 0px;
+ z-index: 3;
+ border: 4px solid white;
+ background-color: white;
 }
 
 
@@ -261,14 +264,14 @@ input {
 
 
 .menus {
-  width: 800px;
+  width: 90%;
 }
 
 
 .foods {
   float: left;
-  width: 25%;
-  margin: 30px;
+  width: 23%;
+  margin: 1%;
   margin-top: 0px;
   text-align: center;
   text-transform: capitalize;
@@ -317,8 +320,7 @@ none {
 .menu-style {
   float: left;
   background-color: #cfbe46;
-  margin-left: 40px;
-  top: 0px;
+  margin-top: 3%;
   width: 60%;
   font-size: 15px;
   text-align: center;
@@ -338,6 +340,8 @@ none {
 
 .map {
   float: left;
+  margin-top:3%;
+
   width: 60%;
   height: 500px;
   padding: 10px;
@@ -369,25 +373,6 @@ none {
  himalaya image slider
    */
 
-.rhino-bullets {
-  position: absolute;
-  bottom: 0px;
-  left: 45%;
-  z-index: 10;
-}
-
-
-.rhino-bullets li {
-  float: left;
-  display: inline;
-  margin: 0 2px;
-}
-
-
-ul#slider {
-  height: 550px;
-}
-
 
 .rhino-bullets li a.rhino-bullet {
   display: block;
@@ -415,31 +400,58 @@ ul#slider {
   background: #ba130d url(img/slider/bullet-hover.jpg);
 }
 
+
+
 /* Rhino slide */
 
-#page {
-  width: 800px;
-  height: 400px;
+.rhino-bullets {
+  position: absolute;
+  left: 45%;
+  bottom: 0px;
+  z-index: 10;
 }
 
 
+.rhino-bullets li {
+  float: left;
+  display: inline;
+  margin: 0 2px;
+}
 ol.rhino-bullets {
   position: absolute;
   height: 5px;
-  top: 350px;
+  top: 93%;
+}
+
+#page {
+  width:70%;
+  height:21em;
+  float: left;
 }
 
 
-#slider img {
-  position: relative;
-  top: 5px;
-  left: 60px;
-  width: 700px;
-  height: 350px;
-  border: 4px solid #c0c0c0;
+ul#slider {
+width: 100%;
+height: 20em;
+ border: 4px solid white;
+
+}
+
+#slider{
+  width:100%;
+  height: 20em;
+
+  /*IE bugfix*/
+  padding: 0;
+
+}
+#slider img{
+  width:100%;
+  height: 20em;
   /*IE bugfix*/
   padding: 0;
   margin: 0;
+
 
 }
 
@@ -508,50 +520,48 @@ ol.rhino-bullets {
   color: white;
 }
 
+
 @media (max-width: 1024px) and (min-width: 768px) {
 
-  .main {
-    position: relative;
-    z-index: 0;
-    width: 100%;
-    height: 700px;
-    margin-top: 115px;
-    margin-left: 3%;
-  }
 
   /*=========== change in code fixed ======*/
 
   .form {
-    position: absolute;
-    top: 0px;
-    right: 2px;
-    width: 28%;
+  width: 30%;
+   float: right;
+   top: 0px;
     z-index: 3;
-    height: 82%;
   }
 
 
   input {
     width: 11em;
     font-size: 15px;
+    color: white;
   }
 
   /*=========== change in code fixed ======*/
 
   .himalaya-description {
-    display: none;
+    width: 63.5%;
+    font-size: 1em;
+    color: black;
+    text-align: justify;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 4px solid w;
   }
 
   /* My Comment */
 
   .menus {
-    width: 800px;
+    width:80%;
   }
 
 
   .foods {
     float: left;
-    width: 39%;
+    width: 35%;
     margin: 20px;
     margin-right: 5px;
     margin-top: 0px;
@@ -620,10 +630,12 @@ ol.rhino-bullets {
 
   /*=========== start of facebook ======*/
 
+/* Rhino slide */
+
   .rhino-bullets {
     position: absolute;
+    left: 45%;
     bottom: 0px;
-    left: 40%;
     z-index: 10;
   }
 
@@ -633,64 +645,60 @@ ol.rhino-bullets {
     display: inline;
     margin: 0 2px;
   }
+  ol.rhino-bullets {
+    position: absolute;
+    height: 5px;
+    top: 93%;
+  }
+
+  #page {
+    width:69%;
+    height:21em;
+    float: left;
+  }
 
 
   ul#slider {
-    margin: 0px;
-    padding: 0px;
-    height: 550px;
+  width: 96%;
+  height: 19em;
+   border: 4px solid white;
+
   }
 
-  /* Rhino slide */
+  #slider{
+    width:100%;
+    height: 20em;
 
-  #page {
-    width: 700px;
-    height: 600px;
+    /*IE bugfix*/
+    padding: 0;
+
   }
+  #slider img{
+    width:100%;
+    height: 19em;
 
-
-  ol.rhino-bullets {
-    position: absolute;
-    top: 400px;
-  }
-
-
-  #slider img {
-    position: relative;
-    top: 5px;
-    left: 5px;
-    width: 100%;
-    height: 400px;
     /*IE bugfix*/
     padding: 0;
     margin: 0;
+
+
   }
 
 
   #slider li {
     list-style: none;
   }
-}
-@media (max-width: 768px) {
 
-  .main {
-    position: relative;
-    z-index: 0;
-    width: 100%;
-    height: 750px;
-    margin-top: 115px;
-    margin-left: 3%;
-  }
+
+}
+@media (max-width: 865px) {
 
   /*=========== change in code fixed ======*/
 
   .form {
-    position: absolute;
+    width: 32%;
     top: 0px;
-    margin-right: 5px;
-    width: 35%;
     z-index: 3;
-    height: 82%;
   }
 
 
@@ -700,33 +708,39 @@ ol.rhino-bullets {
   }
 
   /*=========== change in code fixed ======*/
-
-  .himalaya-description {
-    display: none;
-  }
+.himalaya-description {
+  width: 60%;
+  font-size: 1em;
+  color: white;
+  text-align: justify;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 4px solid w;
+}
 
   /* My Comment */
 
-  .menus {
-    width: 600px;
-  }
+
+.menus {
+  width: 70%;
+}
 
 
-  .foods {
-    float: left;
-    width: 39%;
-    margin: 5px;
-    margin-right: 5px;
-    margin-top: 0px;
-    text-align: center;
-    text-transform: capitalize;
-    font-size: 20px;
-  }
+.foods {
+  float: left;
+  width: 45%;
+  margin: 1%;
+  margin-top: 0px;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 20px;
+}
 
 
-  .foods a img {
-    width: 11em;
-  }
+.foods a img {
+  width: 11em;
+  height: 10em;
+}
 
   /*=========== start of footer ======*/
 
@@ -786,58 +800,253 @@ ol.rhino-bullets {
 
   /*=========== start of facebook ======*/
 
-  .rhino-bullets {
-    position: absolute;
-    bottom: 0px;
-    left: 30%;
-    z-index: 10;
-  }
 
-
-  .rhino-bullets li {
-    float: left;
-    display: inline;
-    margin: 0 2px;
-  }
-
-
-  ul#slider {
-    margin: 0px;
-    padding: 0px;
-    height: 550px;
-  }
 
   /* Rhino slide */
+  /* Rhino slide */
 
-  #page {
-    width: 500px;
-    height: 600px;
-  }
-
-
-  ol.rhino-bullets {
-    position: absolute;
-    top: 400px;
-  }
+    .rhino-bullets {
+      position: absolute;
+      left: 45%;
+      bottom: 0px;
+      z-index: 10;
+    }
 
 
-  #slider img {
-    position: relative;
-    top: 5px;
-    left: 0px;
-    width: 480px;
-    height: 400px;
-    /*IE bugfix*/
-    padding: 0;
-    margin: 0;
-  }
+    .rhino-bullets li {
+      float: left;
+      display: inline;
+      margin: 0 2px;
+    }
+    ol.rhino-bullets {
+      position: absolute;
+      height: 5px;
+      top: 93%;
+    }
+
+    #page {
+      width:66%;
+      height:21em;
+    }
 
 
-  #slider li {
-    list-style: none;
-  }
+    ul#slider {
+    width: 96%;
+    height: 19em;
+     border: 4px solid white;
+
+    }
+
+    #slider{
+      width:100%;
+      height: 20em;
+
+      /*IE bugfix*/
+      padding: 0;
+
+    }
+    #slider img{
+      width:100%;
+      height: 19em;
+
+      /*IE bugfix*/
+      padding: 0;
+      margin: 0;
+
+
+    }
+
+
+    #slider li {
+      list-style: none;
+    }
+
+
+
+
 }
-@media screen and (max-width: 500px) {
+
+
+@media (max-width: 798px) {
+
+  /*=========== change in code fixed ======*/
+
+  .form {
+  width: 42%;
+    top: 0px;
+    z-index: 3;
+  }
+
+
+  input {
+    width: 11em;
+    font-size: 15px;
+  }
+
+  /*=========== change in code fixed ======*/
+.nav-hold {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+
+.nav-hold {
+overflow: hidden;
+}
+.himalaya-description {
+  width: 50%;
+  margin-top: 15px;
+  font-size: 1em;
+  color: black;
+  text-align: justify;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 4px solid w;
+}
+  /* My Comment */
+
+.menus {
+  width: 55%;
+}
+
+
+.foods {
+  float: left;
+  width: 46%;
+  margin: 2%;
+  margin-top: 0px;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 20px;
+}
+
+
+.foods a img {
+  width: 9em;
+  height: 9em;
+}
+
+  /*=========== start of footer ======*/
+
+  .footer {
+    clear: both;
+    font-size: 18px;
+    text-align: center;
+    width: 100%;
+    height: 112px;
+    margin: 0;
+    color: white;
+    background-color: #6C7A89;
+  }
+
+  /*=========== menu-degustacion  ======*/
+
+  .menu-text {
+    color: purple;
+    font-weight: normal;
+    font-size: 20px;
+    width: 50%;
+    margin-left: 5px;
+  }
+
+  /*=========== change in code fixed ======*/
+
+  .menu-style {
+    float: left;
+    background-color: #cfbe46;
+    width: 55%;
+    font-size: 10px;
+    text-align: center;
+    border-style: groove;
+    border-color: #0e0000;
+  }
+
+
+  .menu-style p a {
+    top: 0px;
+    font-size: 20px;
+    color: #ff694c;
+    text-transform: capitalize;
+  }
+
+  /*=========== start of map ======*/
+
+  .map {
+    float: left;
+    width: 50%;
+    height: 450px;
+
+  }
+
+  /*=========== start of facebook ======*/
+
+
+
+  /* Rhino slide */
+  /* Rhino slide */
+
+    .rhino-bullets {
+      position: absolute;
+      left: 45%;
+      bottom: 0px;
+      z-index: 10;
+    }
+
+
+    .rhino-bullets li {
+      float: left;
+      display: inline;
+      margin: 0 2px;
+    }
+    ol.rhino-bullets {
+      position: absolute;
+      height: 5px;
+      top: 93%;
+    }
+
+    #page {
+      width:56%;
+      height:20em;
+    }
+
+
+    ul#slider {
+    width: 100%;
+    height: 19em;
+     border: 4px solid white;
+
+    }
+
+    #slider{
+      width:100%;
+      height: 20em;
+
+      /*IE bugfix*/
+      padding: 0;
+
+    }
+    #slider img{
+      width:100%;
+      height: 19em;
+
+      /*IE bugfix*/
+      padding: 0;
+      margin: 0;
+
+
+    }
+
+
+    #slider li {
+      list-style: none;
+    }
+
+
+
+
+}
+@media screen and (max-width: 670px) {
 
   .reserva_mesa {
     color: #ed5b1e;
@@ -910,24 +1119,23 @@ ol.rhino-bullets {
   }
 
 
-  .main {
-    position: relative;
-    z-index: 0;
-    width: 100%;
-    height: 100%;
-    margin-top: 5px;
-    margin-left: 3%;
-  }
+
 
   /*=========== change in code fixed ======*/
+.main {
+  z-index: 0;
+  width: 90%;
+  margin: auto;
 
+}
   .form {
-    position: relative;
+   width: 96%;
     top: 0px;
-    margin-left: 40px;
-    width: 60%;
     z-index: 3;
-    height: 61%;
+  top: 0px;
+   z-index: 3;
+    border-style: none;
+    background-color: #edeeed;
   }
 
 
@@ -987,9 +1195,8 @@ ol.rhino-bullets {
   .menu-style {
     float: left;
     background-color: #cfbe46;
-    margin-left: 2px;
     top: 0px;
-    width: 90%;
+    width: 100%;
     font-size: 10px;
     text-align: center;
     border-style: groove;
@@ -1017,52 +1224,68 @@ ol.rhino-bullets {
 
   /*=========== start of facebook ======*/
 
-  .rhino-bullets {
-    position: absolute;
-    bottom: 0px;
-    left: 20%;
-    z-index: 10;
-  }
-
-
-  .rhino-bullets li {
-    float: left;
-    display: inline;
-    margin: 0 2px;
-  }
-
-
-  ul#slider {
-    margin: 0px;
-    padding: 0px;
-    height: 550px;
-  }
 
   /* Rhino slide */
 
-  #page {
-    width: 300px;
-    height: 280px;
-  }
 
 
-  ol.rhino-bullets {
-    position: absolute;
-    top: 250px;
-  }
+  /* Rhino slide */
+
+    .rhino-bullets {
+      position: absolute;
+      left: 45%;
+      bottom: 0px;
+      z-index: 10;
+    }
 
 
-  #slider img {
-    left: 7px;
+    .rhino-bullets li {
+      float: left;
+      display: inline;
+      margin: 0 2px;
+    }
+    ol.rhino-bullets {
+      position: absolute;
+      height: 5px;
+      top: 93%;
+    }
+
+    #page {
+      width:100%;
+      height:21em;
+      float: none;
+    }
+
+
+    ul#slider {
     width: 100%;
-    height: 250px;
-    /*IE bugfix*/
-    padding: 0;
-    margin: 0;
-  }
+    height: 19em;
+     border: 4px solid white;
+
+    }
+
+    #slider{
+      width:100%;
+      height: 20em;
+
+      /*IE bugfix*/
+      padding: 0;
+
+    }
+    #slider img{
+      width:100%;
+      height: 19em;
+
+      /*IE bugfix*/
+      padding: 0;
+      margin: 0;
 
 
-  #slider li {
-    list-style: none;
-  }
+    }
+
+
+    #slider li {
+      list-style: none;
+    }
+
 }
