@@ -15,6 +15,7 @@ Restaurant::Application.routes.draw do
    get "map" ,to:"infos#map"
    get "menudegustation",to:"infos#menudegustation"
    get "menudegustation18",to:"infos#menudegustation18"
+   get "offerta",to:"infos#menu12"
 
    resources :himalayas
    #resources :himalayas,only:[:index,:new,:create]

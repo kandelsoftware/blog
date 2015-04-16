@@ -9,7 +9,9 @@ class InfosController < ApplicationController
    def menudegustation
    himalaya_form
   end
-
+   def menu12
+   himalaya_form
+  end
   def map
    himalaya_form
 
