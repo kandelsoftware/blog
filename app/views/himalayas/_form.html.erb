@@ -18,11 +18,8 @@
 
       <div class="field">
           <%= f.label :menu ,"Selecciona de menu"%></br>
-                     <%=f.select :menu,[ ["Carta 40% Descuntos","Carta 40%" ],["Menu Degustion 18€", "Menu Degustion  18€"], ["Menu Degustion 20€", "Menu Degustion 20€"]
-                      ] %>
+                     <%=f.select :menu,[ ["Carta 40% Descuento","Carta 40% Descuento" ] ] %>
                </div>
-
-
 
       <% elsif  free %>
 
@@ -34,7 +31,7 @@
         <%  else %>
         <div class="field">
       <%= f.label :menu , "Selecciona de menu"%></br>
-                <%=f.select :menu,[["Carta","Carta" ],["Menu Degustion  ", "Menu Degustion 18 €"],  ["Menu Degustion 20", "Menu Degustion 20€"]
+                <%=f.select :menu,[["Carta","Carta" ], ["Menu Degustion 20", "Menu Degustion 20€"]
                  ] %>
           </div>
           <%end%>
