@@ -25,8 +25,8 @@ def carta_descount
 params[:utm_source]=="facebook" || params[:utm_source]=="google" || params[:utm_source]=="atraplo"
 
 end
-
-
+40% descuento a la carta
+Disfruta  40% descuentos en carta  menu hindú
 def carta_primero_free
 params[:utm_source]=="facebook_free" || params[:utm_source]=="google_free" || params[:utm_source]=="atraplo_free"
 
