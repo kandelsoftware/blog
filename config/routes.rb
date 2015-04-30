@@ -12,6 +12,7 @@ Restaurant::Application.routes.draw do
   devise_for :users
   resources :users
   resources :infos
+
    get "map" ,to:"infos#map"
    get "menudegustation",to:"infos#menudegustation"
    get "menudegustation18",to:"infos#menudegustation18"
@@ -21,8 +22,10 @@ Restaurant::Application.routes.draw do
    #resources :himalayas,only:[:index,:new,:create]
   #resources :himalayas,path:"",except:[:index,:new,:create]
 
-
- resources :menus,path: '/restaurante-hindu-barcelona' do
+  resources :menus,path: '/indian-restaurant-barcelona' do
+  resources :comidas,path: '/indian-restaurant'
+  end
+resources :menus,path: '/restaurante-hindu-barcelona' do
 resources :comidas,path: '/comida-india'
 end
 resources :menus do
