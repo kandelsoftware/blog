@@ -3,7 +3,6 @@ class CreateExitpops < ActiveRecord::Migration
     create_table :exitpops do |t|
       t.string :name
       t.string :email
-
       t.timestamps
     end
   end
