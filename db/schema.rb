@@ -25,9 +25,9 @@ ActiveRecord::Schema.define(:version => 20150510175537) do
     t.string   "name"
     t.string   "price"
     t.string   "img"
-    t.text     "description", :limit => 255
-    t.datetime "created_at",                 :null => false
-    t.datetime "updated_at",                 :null => false
+    t.text     "description"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
   end
 
   add_index "comidas", ["menu_id"], :name => "index_comidas_on_menu_id"

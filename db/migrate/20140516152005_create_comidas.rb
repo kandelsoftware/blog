@@ -5,7 +5,7 @@ class CreateComidas < ActiveRecord::Migration
       t.string :name
       t.string :price
       t.string :img
-      t.string :description
+      t.text :description
 
       t.timestamps
     end
