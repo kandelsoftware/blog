@@ -1,12 +1,15 @@
   <div class="nav-hold"><%=link_to"Himalaya",root_url, class: "nav-logo"%>
   <a id="nav-menu" class="nav-menu"> &#9776;</a>
   <ul class="nav-list" id="nav">
-        <li><%=link_to"Incio",root_url%></li>
-        <li><%=link_to"Carta",menus_path%></li>
-        <li><%=link_to"Degustación ",infos_path%></li>
-        <li><%=link_to"Mapa",map_path%></li>
+        <li><%=link_to t("nav.Inicio"),root_url%></li>
+        <li><%=link_to t("nav.Carta"),menus_path%></li>
+        <li><%=link_to t("nav.Degustación"),infos_path%></li>
+        <li><%=link_to t("nav.Mapa"),map_path%></li>
 
 
+         <%= link_to_unless I18n.locale == :es, image_tag('img/lang/es.gif', size: '20x20'), locale: "es" %>
+
+     <%= link_to_unless I18n.locale == :en, image_tag('img/lang/en.gif',size: '20x20'), locale: "en" %>
    </ul>
 </div>
 

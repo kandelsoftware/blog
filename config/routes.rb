@@ -1,36 +1,49 @@
 Restaurant::Application.routes.draw do
 
 
-  resources :exitpops
+  scope "(:locale)", locale: /#{I18n.available_locales.join("|")}/ do
+      resources :exitpops
 
 
-  resources :descuentos
+      resources :descuentos
 
-#resources :restaurante_hindu_menus, path: '/restaurante-hindu'
-  resources :assignments
-  resources :roles
-  devise_for :users
-  resources :users
-  resources :infos
+    #resources :restaurante_hindu_menus, path: '/restaurante-hindu'
+      resources :assignments
+      resources :roles
+      devise_for :users
+      resources :users
+      resources :infos
 
-   get "map" ,to:"infos#map"
-   get "menudegustation",to:"infos#menudegustation"
-   get "menudegustation18",to:"infos#menudegustation18"
-   get "offerta",to:"infos#menu12"
+       get "map" ,to:"infos#map"
+       get "menudegustation",to:"infos#menudegustation"
+       get "menudegustation18",to:"infos#menudegustation18"
+       get "offerta",to:"infos#menu12"
 
-   resources :himalayas
-   #resources :himalayas,only:[:index,:new,:create]
-  #resources :himalayas,path:"",except:[:index,:new,:create]
+       resources :himalayas
+       #resources :himalayas,only:[:index,:new,:create]
+      #resources :himalayas,path:"",except:[:index,:new,:create]
 
-  resources :menus,path: '/indian-restaurant-barcelona' do
-  resources :comidas,path: '/indian-foods'
-  end
-resources :menus,path: '/restaurante-hindu-barcelona' do
-resources :comidas,path: '/comida-india'
-end
-resources :menus do
-resources :comidas
-end
+      resources :menus,path: '/indian-restaurant-barcelona' do
+      resources :comidas,path: '/indian-foods'
+      end
+    resources :menus,path: '/restaurante-hindu-barcelona' do
+    resources :comidas,path: '/comida-india'
+    end
+    resources :menus do
+    resources :comidas
+    end
+
+     root :to => 'himalayas#new' # handles /en/
+   end
+
+
+   match '*path', to: redirect("/#{I18n.default_locale}/%{path}")
+   match '', to: redirect("/#{I18n.default_locale}")
+
+
+
+
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -81,7 +94,6 @@ end
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-   root :to => 'himalayas#new'
 
   # See how all your routes lay out with "rake routes"
 

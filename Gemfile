@@ -5,12 +5,11 @@ gem 'rails', '3.2.18'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
-
+gem 'globalize', '~> 3.1.0'
 
 group :development do
 gem 'sqlite3'
 end
-
 
 #gem 'friendly_id', '~>  4.0.0'
 group :production do

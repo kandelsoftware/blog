@@ -2,4 +2,21 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  hello: "Hello world"
+  nav:
+      Inicio: 'Home'
+      Carta: 'Menu'
+      Degustación: 'Testing Menu'
+      Mapa : "Map"
+
+  himalayas:
+    reserva: "Resarve your table"
+    person: "Select Person(s)"
+    hora: "Select Time"
+    menu: "Select Menu"
+    apellidos: 'Sirname'
+    nombre: 'Name'
+    email:  'Email'
+    telefono: "Phone Number"
+    description1: "If you want to dive in the Indian flavors, just come to the Himalaya restaurant: you will experience a journey through flavors your palate Spend an ideal evening and awaken your senses!"
+    description2: "Hindu Gastronomy and all the exoticism that you can imagine, in the Eixample district of Barcelona, a short walk from Arc de Triomf Enter the Himalaya restaurant and taste specialties such as the famous tandoori chicken or prawns malai You'll love.! If you're into exotic and distant flavors, book table and go with yours to Himalayas! "
+    description3: "Its atmosphere will take you to remote havens also is so well located that makes it ideal for dinner before heading out for a drink by the Born or other tourist areas of the city site If you want to eat well without spending much money, stop by. Spices, mild flavors, some more spicy ... everything is combined in Himalayas! "

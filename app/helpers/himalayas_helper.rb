@@ -9,7 +9,6 @@ module HimalayasHelper
 	end
 
 
-
 def time_now
 	 time=Time.new
   return "#{time.hour}:30" if  time.min <= 25

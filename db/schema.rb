@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20150510175537) do
+ActiveRecord::Schema.define(:version => 20150512195030) do
 
   create_table "assignments", :force => true do |t|
     t.integer  "user_id"
@@ -19,6 +19,18 @@ ActiveRecord::Schema.define(:version => 20150510175537) do
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
+
+  create_table "comida_translations", :force => true do |t|
+    t.integer  "comida_id"
+    t.string   "locale",      :null => false
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+    t.string   "name"
+    t.text     "description"
+  end
+
+  add_index "comida_translations", ["comida_id"], :name => "index_comida_translations_on_comida_id"
+  add_index "comida_translations", ["locale"], :name => "index_comida_translations_on_locale"
 
   create_table "comidas", :force => true do |t|
     t.integer  "menu_id"
@@ -67,6 +79,17 @@ ActiveRecord::Schema.define(:version => 20150510175537) do
   end
 
   add_index "himalayas", ["slug"], :name => "index_himalayas_on_slug"
+
+  create_table "menu_translations", :force => true do |t|
+    t.integer  "menu_id"
+    t.string   "locale",     :null => false
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+    t.string   "name"
+  end
+
+  add_index "menu_translations", ["locale"], :name => "index_menu_translations_on_locale"
+  add_index "menu_translations", ["menu_id"], :name => "index_menu_translations_on_menu_id"
 
   create_table "menus", :force => true do |t|
     t.string   "name"

@@ -1,0 +1,17 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+es:
+
+  himalayas:
+    reserva: "Reserva tu mesa"
+    person: "Seleccion Persona(s)"
+    hora: "Seleccion Hora"
+    menu: "Seleccion de Menu"
+    apellidos: 'Apellidos'
+    nombre: 'Nombre'
+    email:  'Email'
+    telefono: "Telefono"
+    description1: "Si quieres adentrarte en los sabores hindúes, sólo tienes que venir al restaurante Himalaya: ¡experimentarás un viaje de sabores a través de tu paladar! Pasa un velada ideal, y ¡despierta tus sentidos! "
+    description2: "Gastronomía hindú y todo el exotismo que te puedas imaginar, en pleno Eixample de Barcelona, a dos pasos de Arc de Triomf. Entra en el restaurante Himalaya y degusta especialidades como el famoso Pollo tandoori o las Gambas malai. ¡Te encantarán! Si te va lo exótico y los sabores lejanos, ¡reserva mesa y ve con los tuyos a Himalaya!"
+    description3: "Su ambientación te trasladará a paraísos remotos. Además, está tan bien situado que se convierte en el sitio ideal para ir a cenar antes de salir a tomar unas copas por el Born u otras zonas turísticas de la ciudad. Si quieres comer bien sin gastarte mucho dinero, pásate por allí. Especias, sabores suaves, otros más picantes... ¡todo se combina en Himalaya!"

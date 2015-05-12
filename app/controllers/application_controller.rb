@@ -1,6 +1,7 @@
 class ApplicationController < ActionController::Base
 
   protect_from_forgery
+  before_filter :set_locale
     helper :all
     before_filter :campain1
     before_filter :campain2
@@ -30,6 +31,22 @@ params[:utm_source]=="facebook_free" || params[:utm_source]=="google_free" || pa
 
 end
 
+def set_locale
+I18n.locale=params[:locale] if params[:locale].present?
+end
 
+def default_url_options(options = {})
+  {locale: I18n.locale}
+end
+
+def include_i18n_calendar_javascript
+  content_for :head do
+    javascript_include_tag case I18n.locale
+      when :en then "jquery.ui.datepicker"
+      when :es then "jquery.ui.datepicker-es.js"
+      else raise ArgumentError, "Locale error"
+    end
+  end
+end
 end
 

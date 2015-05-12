@@ -1,5 +1,4 @@
 class Himalaya < ActiveRecord::Base
-
 #  extend FriendlyId
 # friendly_id :nombre,use: :slugged
 #validates :slug, uniqueness:true, presence:true
