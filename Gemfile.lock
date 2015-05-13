@@ -161,7 +161,7 @@ DEPENDENCIES
   mysql2
   placeholder-gem
   rails (= 3.2.18)
-  sass-rails (~> 3.2.3)
+  sass-rails (~> 3.2.6)
   sqlite3
   turbolinks
   uglifier (>= 1.0.3)
