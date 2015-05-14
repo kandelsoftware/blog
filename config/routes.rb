@@ -33,7 +33,7 @@ Restaurant::Application.routes.draw do
     resources :comidas
     end
 
-     root :to => 'himalayas#new' # handles /en/
+     root :to => 'himalayas#new' , defaults: { :format => "html" }# handles /en/
    end
 
 

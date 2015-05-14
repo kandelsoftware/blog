@@ -5,11 +5,9 @@
         <li><%=link_to t("nav.Carta"),menus_path%></li>
         <li><%=link_to t("nav.Degustación"),infos_path%></li>
         <li><%=link_to t("nav.Mapa"),map_path%></li>
-
-
+        <%= link_to_unless I18n.locale == :en, image_tag('img/lang/en.gif',size: '20x20'), locale: "en" %>
          <%= link_to_unless I18n.locale == :es, image_tag('img/lang/es.gif', size: '20x20'), locale: "es" %>
 
-     <%= link_to_unless I18n.locale == :en, image_tag('img/lang/en.gif',size: '20x20'), locale: "en" %>
    </ul>
 </div>
 
