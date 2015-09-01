@@ -1,10 +1,7 @@
 production:
-  adapter: mysql2
-  encoding: utf8
-  reconnect: false
+  adapter: postgresql
+  encoding: unicode
   database: blog_production
   pool: 5
-  host: localhost
-  username: root
+  username: saroj
   password:
-  socket: /var/run/mysqld/mysqld.sock
