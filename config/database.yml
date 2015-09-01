@@ -6,5 +6,11 @@ development:
   username: saroj
   password:
 
- 
+ production:
+  adapter: postgresql
+  encoding: unicode
+  database: blog_production
+  pool: 5
+  username: saroj
+  password:
 

@@ -3,5 +3,5 @@ production:
   encoding: unicode
   database: blog_production
   pool: 5
-  username: saroj
+  username: blog
   password:
