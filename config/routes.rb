@@ -1,5 +1,6 @@
 Restaurant::Application.routes.draw do
 
+      devise_for :users
 
   scope ":locale", locale: /#{I18n.available_locales.join("|")}/ do
       resources :exitpops
@@ -10,7 +11,6 @@ Restaurant::Application.routes.draw do
     #resources :restaurante_hindu_menus, path: '/restaurante-hindu'
       resources :assignments
       resources :roles
-      devise_for :users
       resources :users
       resources :infos
 
