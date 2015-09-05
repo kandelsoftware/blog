@@ -18,7 +18,7 @@ Restaurant::Application.configure do
   # Generate digests for assets URLs
   config.assets.digest = true
 
-config.action_mailer.default_url_options = { :host => 'http://himalayarestaurant.es' }
+config.action_mailer.default_url_options = { :host => 'himalayarestaurant.es' }
   # Show full error reports and disable caching
  config.consider_all_requests_local       = true
   config.action_controller.perform_caching = true
