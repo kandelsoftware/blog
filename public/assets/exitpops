@@ -1,0 +1,1 @@
+(function(){$(function(){return $("form#new_exitpop").submit(function(n){return console.log(n.currentTarget),$("#exitpopup").on("ajax:success",function(n,e,o,p){return $("#exitpopup").append(p.responseText)}).on("ajax:error",function(){$("#exitpop_email").append("<p>error</p>")})})})}).call(this);
