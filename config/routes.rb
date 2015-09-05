@@ -36,10 +36,10 @@ Restaurant::Application.routes.draw do
      root :to => 'himalayas#new' , defaults: { :format => "html" }# handles /en/
      match "*path", to: "locale#not_found" # handles /en/fake/path/whatever
    end
+   root to: redirect("/#{I18n.default_locale}")
 
 
    match '*path', to: redirect("/#{I18n.default_locale}/%{path}")
-   root to: redirect("/#{I18n.default_locale}")
 
 
 
