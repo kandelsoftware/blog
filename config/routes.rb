@@ -1,7 +1,7 @@
 Restaurant::Application.routes.draw do
 
 
-  scope "(:locale)", locale: /#{I18n.available_locales.join("|")}/ do
+  scope ":locale", locale: /#{I18n.available_locales.join("|")}/ do
       resources :exitpops
 
 
@@ -23,22 +23,23 @@ Restaurant::Application.routes.draw do
        #resources :himalayas,only:[:index,:new,:create]
       #resources :himalayas,path:"",except:[:index,:new,:create]
 
-      resources :menus,path: '/indian-restaurant-barcelona' do
-      resources :comidas,path: '/indian-foods'
-      end
-    resources :menus,path: '/restaurante-hindu-barcelona' do
-    resources :comidas,path: '/comida-india'
-    end
+      #resources :menus,path: '/indian-restaurant-barcelona' do
+      #resources :comidas,path: '/indian-foods'
+      #end
+    #resources :menus,path: '/restaurante-hindu-barcelona' do
+    #resources :comidas,path: '/comida-india'
+    #end
     resources :menus do
     resources :comidas
     end
 
      root :to => 'himalayas#new' , defaults: { :format => "html" }# handles /en/
+     match "*path", to: "locale#not_found" # handles /en/fake/path/whatever
    end
 
 
    match '*path', to: redirect("/#{I18n.default_locale}/%{path}")
-   match '', to: redirect("/#{I18n.default_locale}")
+   root to: redirect("/#{I18n.default_locale}")
 
 
 
