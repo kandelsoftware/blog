@@ -7,7 +7,7 @@
 <div class= "foods">
 
      <br>  <%= link_to menu.name, menu_comidas_path(menu) %></br>
-  <%=link_to (image_tag"#{(menu.image) }.jpg"),menu_comidas_path(menu)%>
+  <%=link_to image_tag(menu.image_url(:thumb).to_s),menu_comidas_path(menu) %>
 
 
                   <% if permitted_to? :edit,menu %>

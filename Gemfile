@@ -15,7 +15,8 @@ end
 group :production do
 	gem 'pg'
 end
-
+gem "carrierwave"
+gem "rmagick"
 gem 'turbolinks'
 gem "placeholder-gem"
 

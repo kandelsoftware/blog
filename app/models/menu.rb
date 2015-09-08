@@ -4,5 +4,5 @@ class Menu < ActiveRecord::Base
   has_many :comidas
    extend FriendlyId
    friendly_id :url
-
+ mount_uploader :image, ImageUploader
 end

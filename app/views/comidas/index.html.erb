@@ -9,7 +9,7 @@
 <p><% @comidas.each do |comida| %></p>
 <div class="foods">
  <%=  link_to comida.name ,[@menu,comida]%><td><%="#{comida.price}€" %><br>
- <%= link_to image_tag("#{comida.img}.jpg"), [@menu,comida] %>
+ <%= link_to image_tag(comida.image_url(:thumb).to_s), [@menu,comida] %>
   <td><%#= link_to 'Edit', edit_menu_comida_path(@menu,comida) %>
   <td><%#= link_to 'Destroy',[ @menu,comida], method: :delete, data: { confirm: 'Are you sure?' } %>
   <td><%#= link_to 'New Comida', new_menu_comida_path(@menu) %>
