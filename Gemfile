@@ -16,8 +16,7 @@ group :production do
 	gem 'pg'
 end
 gem "carrierwave"
-gem 'rmagick' 
-gem 'mini_magick'
+gem 'rmagick' ,'~> 2.15.4'
 gem 'turbolinks'
 gem "placeholder-gem"
 
