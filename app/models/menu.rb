@@ -1,8 +1,8 @@
 class Menu < ActiveRecord::Base
-	translates :name
+  translates :name
   attr_accessible :name,:image,:url
   has_many :comidas
-   extend FriendlyId
+  extend FriendlyId
    friendly_id :url
- mount_uploader :image, ImageUploader
+   mount_uploader :image, ImageUploader
 end

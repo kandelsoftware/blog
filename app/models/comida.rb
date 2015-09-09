@@ -5,5 +5,5 @@ class Comida < ActiveRecord::Base
   belongs_to :menu
   extend FriendlyId
   friendly_id :url
-   mount_uploader :image, ImageUploader
+  mount_uploader :image, ImageUploader
 end
