@@ -5,7 +5,6 @@ filter_resource_access
   # GET /himalayas
   # GET /himalayas.json
   def index
-    @ip=remote.ip
     @himalayas ||= Himalaya.limit(10).order('id desc')
     @descuentos ||= Descuento.limit(10).order('id desc')
     respond_to do |format|
@@ -27,6 +26,8 @@ filter_resource_access
   # GET /himalayas/new
   # GET /himalayas/new.json
   def new
+    @ip=request.remote_ip
+
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @himalaya }
