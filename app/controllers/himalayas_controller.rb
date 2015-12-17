@@ -5,7 +5,7 @@ filter_resource_access
   # GET /himalayas
   # GET /himalayas.json
   def index
-
+    @ip=remote.ip
     @himalayas ||= Himalaya.limit(10).order('id desc')
     @descuentos ||= Descuento.limit(10).order('id desc')
     respond_to do |format|
